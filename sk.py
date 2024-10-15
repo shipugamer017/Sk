@@ -1,6 +1,3 @@
-try:
-    import requests
-except:
     os.system('python -m pip install requests')
     import fake_email    
 except:

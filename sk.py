@@ -1,7 +1,4 @@
-    os.system('python -m pip install requests')
-    import fake_email    
-except:
-    os.system('python -m pip install faker')
+
 import requests
 import random
 import string

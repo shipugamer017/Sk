@@ -4,8 +4,6 @@ except:
     os.system('python -m pip install requests')
 try:
     import fake_email
-except:
-    os.system('python -m pip install fake_email')
 try:
     import faker
 except:
